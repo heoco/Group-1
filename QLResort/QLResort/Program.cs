@@ -23,7 +23,7 @@ namespace QLResort
             SkinManager.EnableFormSkins();
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
 
-            Application.Run(new frmPhong());
+            Application.Run(new frmNhanVien());
         }
     }
 }

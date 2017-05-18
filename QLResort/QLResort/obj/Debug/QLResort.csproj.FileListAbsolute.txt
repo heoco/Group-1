@@ -3,8 +3,10 @@ C:\Users\heoco\Desktop\QLResort\Bin\QLResort.exe.config
 C:\Users\heoco\Desktop\QLResort\Bin\QLResort.exe
 C:\Users\heoco\Desktop\QLResort\Bin\QLResort.pdb
 C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.csprojResolveAssemblyReference.cache
+C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.frmDangNhap.resources
 C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.frmKhachHang.resources
 C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.frmLoaiPhong.resources
+C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.frmNhanVien.resources
 C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.frmPhong.resources
 C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.Properties.Resources.resources
 C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.csproj.GenerateResource.Cache

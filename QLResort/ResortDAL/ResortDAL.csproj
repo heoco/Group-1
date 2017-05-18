@@ -47,6 +47,7 @@
     <Compile Include="HinhAnhDAL.cs" />
     <Compile Include="KhachHangDAL.cs" />
     <Compile Include="LoaiPhongDAL.cs" />
+    <Compile Include="NhanVienDAL.cs" />
     <Compile Include="PhongDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
