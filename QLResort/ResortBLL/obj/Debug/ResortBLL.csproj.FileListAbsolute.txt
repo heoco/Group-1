@@ -1,0 +1,18 @@
+C:\Users\heoco\Desktop\QLResort\Bin\ResortBLL.dll
+C:\Users\heoco\Desktop\QLResort\Bin\ResortBLL.pdb
+C:\Users\heoco\Desktop\QLResort\ResortBLL\obj\Debug\ResortBLL.csprojResolveAssemblyReference.cache
+C:\Users\heoco\Desktop\QLResort\ResortBLL\obj\Debug\ResortBLL.dll
+C:\Users\heoco\Desktop\QLResort\ResortBLL\obj\Debug\ResortBLL.pdb
+E:\Ħɛø Çσ\CShape\QLResort\Bin\ResortBLL.dll
+E:\Ħɛø Çσ\CShape\QLResort\Bin\ResortBLL.pdb
+E:\Ħɛø Çσ\CShape\QLResort\ResortBLL\obj\Debug\ResortBLL.csprojResolveAssemblyReference.cache
+E:\Ħɛø Çσ\CShape\QLResort\ResortBLL\obj\Debug\ResortBLL.dll
+E:\Ħɛø Çσ\CShape\QLResort\ResortBLL\obj\Debug\ResortBLL.pdb
+E:\QLResort\Bin\ResortBLL.dll
+E:\QLResort\Bin\ResortBLL.pdb
+E:\QLResort\ResortBLL\obj\Debug\ResortBLL.csprojResolveAssemblyReference.cache
+E:\QLResort\ResortBLL\obj\Debug\ResortBLL.dll
+E:\QLResort\ResortBLL\obj\Debug\ResortBLL.pdb
+C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\ResortBLL\obj\Debug\ResortBLL.csprojResolveAssemblyReference.cache
+C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\ResortBLL\obj\Debug\ResortBLL.dll
+C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\ResortBLL\obj\Debug\ResortBLL.pdb
