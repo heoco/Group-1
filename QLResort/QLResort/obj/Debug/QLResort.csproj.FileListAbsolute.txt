@@ -70,12 +70,3 @@ E:\QLResort\QLResort\obj\Debug\QLResort.exe.licenses
 E:\QLResort\QLResort\obj\Debug\QLResort.exe
 E:\QLResort\QLResort\obj\Debug\QLResort.pdb
 C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.frmHinhAnh.resources
-C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\Bin\QLResort.exe.config
-C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\QLResort\obj\Debug\QLResort.exe
-C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\QLResort\obj\Debug\QLResort.pdb
-C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\QLResort\obj\Debug\QLResort.csprojResolveAssemblyReference.cache
-C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\QLResort\obj\Debug\QLResort.frmLoaiPhong.resources
-C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\QLResort\obj\Debug\QLResort.frmPhong.resources
-C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\QLResort\obj\Debug\QLResort.Properties.Resources.resources
-C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\QLResort\obj\Debug\QLResort.csproj.GenerateResource.Cache
-C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\QLResort\obj\Debug\QLResort.exe.licenses

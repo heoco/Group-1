@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="DataProvider.cs" />
     <Compile Include="ExecuteDAL.cs" />
+    <Compile Include="HinhAnhDAL.cs" />
     <Compile Include="KhachHangDAL.cs" />
     <Compile Include="LoaiPhongDAL.cs" />
     <Compile Include="PhongDAL.cs" />

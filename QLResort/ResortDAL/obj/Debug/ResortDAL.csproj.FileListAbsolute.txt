@@ -15,6 +15,3 @@ E:\QLResort\Bin\ResortDAL.pdb
 E:\QLResort\ResortDAL\obj\Debug\ResortDAL.csprojResolveAssemblyReference.cache
 E:\QLResort\ResortDAL\obj\Debug\ResortDAL.dll
 E:\QLResort\ResortDAL\obj\Debug\ResortDAL.pdb
-C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\ResortDAL\obj\Debug\ResortDAL.csprojResolveAssemblyReference.cache
-C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\ResortDAL\obj\Debug\ResortDAL.dll
-C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\ResortDAL\obj\Debug\ResortDAL.pdb

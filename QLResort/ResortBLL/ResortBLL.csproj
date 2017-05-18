@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExecuteBLL.cs" />
+    <Compile Include="HinhAnhBLL.cs" />
+    <Compile Include="KhachHangBLL.cs" />
     <Compile Include="LoaiPhongBLL.cs" />
     <Compile Include="PhongBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

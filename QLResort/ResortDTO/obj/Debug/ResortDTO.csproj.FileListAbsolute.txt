@@ -14,8 +14,3 @@ E:\QLResort\Bin\ResortDTO.pdb
 E:\QLResort\ResortDTO\obj\Debug\ResortDTO.csprojResolveAssemblyReference.cache
 E:\QLResort\ResortDTO\obj\Debug\ResortDTO.dll
 E:\QLResort\ResortDTO\obj\Debug\ResortDTO.pdb
-C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\Bin\ResortDTO.dll
-C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\Bin\ResortDTO.pdb
-C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\ResortDTO\obj\Debug\ResortDTO.csprojResolveAssemblyReference.cache
-C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\ResortDTO\obj\Debug\ResortDTO.dll
-C:\Users\TanHiep\Desktop\GitHub LT_CSDL\File 1 - Hiệp\QLResort\ResortDTO\obj\Debug\ResortDTO.pdb
