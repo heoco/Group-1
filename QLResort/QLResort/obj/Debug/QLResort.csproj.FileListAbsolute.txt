@@ -6,8 +6,10 @@ C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.csprojResolveAssembl
 C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.frmDangNhap.resources
 C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.frmKhachHang.resources
 C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.frmLoaiPhong.resources
+C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.frmLoaiSanPham.resources
 C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.frmNhanVien.resources
 C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.frmPhong.resources
+C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.frmSanPham.resources
 C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.Properties.Resources.resources
 C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.csproj.GenerateResource.Cache
 C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.exe.licenses

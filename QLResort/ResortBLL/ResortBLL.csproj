@@ -44,6 +44,7 @@
     <Compile Include="HinhAnhBLL.cs" />
     <Compile Include="KhachHangBLL.cs" />
     <Compile Include="LoaiPhongBLL.cs" />
+    <Compile Include="LoaiSanPhamBLL.cs" />
     <Compile Include="NhanVienBLL.cs" />
     <Compile Include="PhongBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -52,6 +53,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="SanPhamBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ResortDAL\ResortDAL.csproj">

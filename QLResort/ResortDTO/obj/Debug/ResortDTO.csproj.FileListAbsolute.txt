@@ -2,6 +2,7 @@ C:\Users\heoco\Desktop\QLResort\Bin\ResortDTO.dll
 C:\Users\heoco\Desktop\QLResort\Bin\ResortDTO.pdb
 C:\Users\heoco\Desktop\QLResort\ResortDTO\obj\Debug\ResortDTO.dll
 C:\Users\heoco\Desktop\QLResort\ResortDTO\obj\Debug\ResortDTO.pdb
+C:\Users\heoco\Desktop\QLResort\ResortDTO\obj\Debug\ResortDTO.csprojResolveAssemblyReference.cache
 E:\Ħɛø Çσ\CShape\QLResort\Bin\ResortDTO.dll.config
 E:\Ħɛø Çσ\CShape\QLResort\Bin\ResortDTO.dll
 E:\Ħɛø Çσ\CShape\QLResort\Bin\ResortDTO.pdb
