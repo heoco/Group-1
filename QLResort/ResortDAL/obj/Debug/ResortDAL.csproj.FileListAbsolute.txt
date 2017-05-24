@@ -28,3 +28,9 @@ C:\Users\heoco\Downloads\Compressed\QLResort\Bin\ResortDAL.pdb
 C:\Users\heoco\Downloads\Compressed\QLResort\ResortDAL\obj\Debug\ResortDAL.csprojResolveAssemblyReference.cache
 C:\Users\heoco\Downloads\Compressed\QLResort\ResortDAL\obj\Debug\ResortDAL.dll
 C:\Users\heoco\Downloads\Compressed\QLResort\ResortDAL\obj\Debug\ResortDAL.pdb
+C:\Users\PhongTruong\Desktop\Group-1\QLResort\Bin\ResortDAL.dll.config
+C:\Users\PhongTruong\Desktop\Group-1\QLResort\Bin\ResortDAL.dll
+C:\Users\PhongTruong\Desktop\Group-1\QLResort\Bin\ResortDAL.pdb
+C:\Users\PhongTruong\Desktop\Group-1\QLResort\ResortDAL\obj\Debug\ResortDAL.csprojResolveAssemblyReference.cache
+C:\Users\PhongTruong\Desktop\Group-1\QLResort\ResortDAL\obj\Debug\ResortDAL.dll
+C:\Users\PhongTruong\Desktop\Group-1\QLResort\ResortDAL\obj\Debug\ResortDAL.pdb

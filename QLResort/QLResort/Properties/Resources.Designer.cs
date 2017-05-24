@@ -93,9 +93,29 @@ namespace QLResort.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon103_17_512 {
+            get {
+                object obj = ResourceManager.GetObject("icon103-17-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NhanVien {
             get {
                 object obj = ResourceManager.GetObject("NhanVien", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nik_lanus_41808 {
+            get {
+                object obj = ResourceManager.GetObject("nik-lanus-41808", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

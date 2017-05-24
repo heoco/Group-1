@@ -13,7 +13,7 @@ using ResortDTO;
 
 namespace QLResort
 {
-    public partial class frmDangNhap : Form
+    public partial class frmDangNhap : MetroFramework.Forms.MetroForm
     {
         public static bool coHieu;
         public static string chucVu = "";

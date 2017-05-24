@@ -190,11 +190,13 @@
             // picDisplay
             // 
             this.picDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picDisplay.EditValue = global::QLResort.Properties.Resources.nik_lanus_41808;
             this.picDisplay.Location = new System.Drawing.Point(2, 2);
             this.picDisplay.Name = "picDisplay";
             this.picDisplay.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.picDisplay.Properties.Appearance.Options.UseFont = true;
             this.picDisplay.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picDisplay.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.picDisplay.Size = new System.Drawing.Size(1246, 417);
             this.picDisplay.TabIndex = 0;
             // 
@@ -385,7 +387,6 @@
             this.Controls.Add(this.lblNgayTra);
             this.Controls.Add(this.lblNgayNhan);
             this.Controls.Add(this.lblLoaiPhong);
-            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "uscDatPhong";

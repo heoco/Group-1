@@ -23,3 +23,8 @@ C:\Users\heoco\Downloads\Compressed\QLResort\Bin\ResortBLL.pdb
 C:\Users\heoco\Downloads\Compressed\QLResort\ResortBLL\obj\Debug\ResortBLL.csprojResolveAssemblyReference.cache
 C:\Users\heoco\Downloads\Compressed\QLResort\ResortBLL\obj\Debug\ResortBLL.dll
 C:\Users\heoco\Downloads\Compressed\QLResort\ResortBLL\obj\Debug\ResortBLL.pdb
+C:\Users\PhongTruong\Desktop\Group-1\QLResort\Bin\ResortBLL.dll
+C:\Users\PhongTruong\Desktop\Group-1\QLResort\Bin\ResortBLL.pdb
+C:\Users\PhongTruong\Desktop\Group-1\QLResort\ResortBLL\obj\Debug\ResortBLL.csprojResolveAssemblyReference.cache
+C:\Users\PhongTruong\Desktop\Group-1\QLResort\ResortBLL\obj\Debug\ResortBLL.dll
+C:\Users\PhongTruong\Desktop\Group-1\QLResort\ResortBLL\obj\Debug\ResortBLL.pdb

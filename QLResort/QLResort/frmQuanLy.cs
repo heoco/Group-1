@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace QLResort
 {
-    public partial class frmQuanLy : Form
+    public partial class frmQuanLy : MetroFramework.Forms.MetroForm
     {
         public static bool coHieu;
         int iDNhanVien;
@@ -67,5 +67,6 @@ namespace QLResort
                 e.Cancel = true;
             }
         }
+
     }
 }
