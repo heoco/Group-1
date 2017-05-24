@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ResortDAL</RootNamespace>
     <AssemblyName>ResortDAL</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,6 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.configuration" />
@@ -42,7 +51,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietDatPhongDAL.cs" />
+    <Compile Include="ChiTietShoppingDAL.cs" />
     <Compile Include="DataProvider.cs" />
+    <Compile Include="DatPhongDAL.cs" />
+    <Compile Include="EF_CodeFirst\ChiTietDatMonDAL.cs" />
+    <Compile Include="EF_CodeFirst\ChiTietThueXeDAL.cs" />
+    <Compile Include="EF_CodeFirst\DatMonDAL.cs" />
+    <Compile Include="EF_CodeFirst\LoaiMonDAL.cs" />
+    <Compile Include="EF_CodeFirst\LoaiXeDAL.cs" />
+    <Compile Include="EF_CodeFirst\ThucDonDAL.cs" />
+    <Compile Include="EF_CodeFirst\ThueXeDAL.cs" />
+    <Compile Include="EF_CodeFirst\XeDAL.cs" />
     <Compile Include="ExecuteDAL.cs" />
     <Compile Include="HinhAnhDAL.cs" />
     <Compile Include="KhachHangDAL.cs" />
@@ -52,12 +72,18 @@
     <Compile Include="PhongDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SanPhamDAL.cs" />
+    <Compile Include="ShoppingDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ResortDTO\ResortDTO.csproj">
       <Project>{2f06de16-31b0-4e03-b6db-f81be92672a2}</Project>
       <Name>ResortDTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

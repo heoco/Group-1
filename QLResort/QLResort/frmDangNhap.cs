@@ -27,17 +27,18 @@ namespace QLResort
 
         private void frmDangNhap_Load(object sender, EventArgs e)
         {
+            txtPass.Properties.PasswordChar = '*';
             coHieu = false;
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtUser.Text) == true)
+            if (string.IsNullOrEmpty(txtUser.Text))
             {
                 MessageBox.Show("Mời nhập IDNhanVien!");
                 return;
             }
-            if (string.IsNullOrEmpty(txtPass.Text) == true)
+            if (string.IsNullOrEmpty(txtPass.Text))
             {
                 MessageBox.Show("Mời nhập Pass!");
                 return;

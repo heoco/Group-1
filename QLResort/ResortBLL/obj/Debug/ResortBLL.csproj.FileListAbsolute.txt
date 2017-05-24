@@ -13,3 +13,13 @@ E:\QLResort\Bin\ResortBLL.pdb
 E:\QLResort\ResortBLL\obj\Debug\ResortBLL.csprojResolveAssemblyReference.cache
 E:\QLResort\ResortBLL\obj\Debug\ResortBLL.dll
 E:\QLResort\ResortBLL\obj\Debug\ResortBLL.pdb
+C:\Users\MacBook\Project\TBCo\QLResort\Bin\ResortBLL.dll
+C:\Users\MacBook\Project\TBCo\QLResort\Bin\ResortBLL.pdb
+C:\Users\MacBook\Project\TBCo\QLResort\ResortBLL\obj\Debug\ResortBLL.csprojResolveAssemblyReference.cache
+C:\Users\MacBook\Project\TBCo\QLResort\ResortBLL\obj\Debug\ResortBLL.dll
+C:\Users\MacBook\Project\TBCo\QLResort\ResortBLL\obj\Debug\ResortBLL.pdb
+C:\Users\heoco\Downloads\Compressed\QLResort\Bin\ResortBLL.dll
+C:\Users\heoco\Downloads\Compressed\QLResort\Bin\ResortBLL.pdb
+C:\Users\heoco\Downloads\Compressed\QLResort\ResortBLL\obj\Debug\ResortBLL.csprojResolveAssemblyReference.cache
+C:\Users\heoco\Downloads\Compressed\QLResort\ResortBLL\obj\Debug\ResortBLL.dll
+C:\Users\heoco\Downloads\Compressed\QLResort\ResortBLL\obj\Debug\ResortBLL.pdb

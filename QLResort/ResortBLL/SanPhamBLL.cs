@@ -42,6 +42,18 @@ namespace ResortBLL
             }
         }
 
+        public Boolean SubstractSoLuong(DataTable dt, int iD, int soLuong)
+        {
+            try
+            {
+                return new SanPhamDAL().SubstractSoLuong(dt, iD, soLuong);
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+        }
+
         public Boolean Remove(DataTable dt, int iD)
         {
             try

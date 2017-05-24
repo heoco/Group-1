@@ -85,6 +85,7 @@ namespace QLResort
             }
             try
             {
+                kh.tichLuy = 0;
                 new KhachHangBLL().Add(kh);
                 RefreshInfo();
                 LoadData();

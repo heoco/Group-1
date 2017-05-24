@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using ResortBLL;
@@ -16,7 +12,8 @@ namespace QLResort
     public partial class frmNhanVien : Form
     {
         public static bool coHieu;
-        Image img;
+        DataTable dt;
+        Image img, defaultIMG;
 
         public frmNhanVien()
         {
@@ -26,14 +23,21 @@ namespace QLResort
         private void frmNhanVien_Load(object sender, EventArgs e)
         {
             coHieu = false;
-            img = null;
+            dt = new DataTable();
+            defaultIMG = picNhanVien.Image;
             lblUser.Text = "NV: " + frmDangNhap.iDNhanVien + " - " + frmDangNhap.nameNhanVien;
             LoadData();
         }
 
         private void LoadData()
         {
-            gridControlNhanVien.DataSource = GetNhanVien();
+            LoadNhienVien();
+        }
+
+        private void LoadNhienVien()
+        {
+            dt = GetNhanVien();
+            gridControlNhanVien.DataSource = dt;
         }
 
         private DataTable GetNhanVien()
@@ -55,7 +59,16 @@ namespace QLResort
             try
             {
                 int iD = Convert.ToInt32(txtID.Text);
-                string pass = txtPass.Text.Trim();
+                string pass;
+                if (chkPass.Checked)
+                {
+                    pass = txtPass.Text.Trim();
+                }
+                else
+                {
+                    DataRow row = dt.AsEnumerable().SingleOrDefault(it => it.Field<int>(colID.FieldName) == iD);
+                    pass = (row != null) ? row.Field<string>(colPass.FieldName) : txtPass.Text.Trim();
+                }
                 string ho = txtHo.Text.Trim();
                 string ten = txtTen.Text.Trim();
                 bool gioiTinh = radNam.Checked;
@@ -109,6 +122,13 @@ namespace QLResort
             }
             try
             {
+                if (frmDangNhap.chucVu.ToLower().Equals("giám đốc nhân sự"))
+                {
+                    if (nv.chucVu.ToLower().Equals("giám đốc"))
+                    {
+                        throw new Exception("Không có quyền thêm giám đốc!");
+                    }
+                }
                 new NhanVienBLL().Add(nv);
                 RefreshInfo();
                 LoadData();
@@ -128,6 +148,17 @@ namespace QLResort
             }
             try
             {
+                if (frmDangNhap.chucVu.ToLower().Equals("giám đốc nhân sự"))
+                {
+                    if (nv.iD == Convert.ToInt32(frmDangNhap.iDNhanVien))
+                    {
+                        throw new Exception("Không có quyền chỉnh sửa thông tin bản thân!");
+                    }
+                    if (nv.chucVu.ToLower().Equals("giám đốc"))
+                    {
+                        throw new Exception("Không có quyền thao tác với giám đốc!");
+                    }
+                }
                 new NhanVienBLL().Change(nv);
                 RefreshInfo();
                 LoadData();
@@ -140,14 +171,22 @@ namespace QLResort
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            NhanVien nv = GetInfo();
+            if (nv == null)
+            {
+                return;
+            }
             try
             {
-                if (txtID.Text.Equals(""))
+                if (nv.iD == Convert.ToInt32(frmDangNhap.iDNhanVien))
                 {
-                    throw new Exception("ID không thể trống!");
+                    throw new Exception("Không có quyền xóa thông tin bản thân!");
                 }
-                int iD = Convert.ToInt32(txtID.Text);
-                new NhanVienBLL().Remove(iD);
+                if (nv.chucVu.ToLower().Equals("giám đốc"))
+                {
+                    throw new Exception("Không có quyền xóa giám đốc! Cẩn thận đấy.");
+                }
+                new NhanVienBLL().Remove(nv.iD);
                 RefreshInfo();
                 LoadData();
             }
@@ -180,6 +219,7 @@ namespace QLResort
             txtChucVu.Text = "";
             picNhanVien.Image = null;
             toggleTrangThai.IsOn = true;
+            picNhanVien.Image = defaultIMG;
         }
 
         private void btnDong_Click(object sender, EventArgs e)
@@ -215,7 +255,9 @@ namespace QLResort
                 txtSDT.Text = gridViewNhanVien.GetFocusedRowCellValue(colSDT).ToString();
                 txtBangCap.Text = gridViewNhanVien.GetFocusedRowCellValue(colBangCap).ToString();
                 txtChucVu.Text = gridViewNhanVien.GetFocusedRowCellValue(colChucVu).ToString();
-                picNhanVien.Image = (gridViewNhanVien.GetFocusedRowCellValue(colHinhAnh).ToString() != "") ? new XuLyAnh().ArrayByteToImage((byte[])gridViewNhanVien.GetFocusedRowCellValue(colHinhAnh)) : null;
+                picNhanVien.Image = img = !gridViewNhanVien.GetFocusedRowCellValue(colHinhAnh).ToString().Equals("")
+                    ? new XuLyAnh().ArrayByteToImage((byte[])gridViewNhanVien.GetFocusedRowCellValue(colHinhAnh))
+                    : defaultIMG;
                 toggleTrangThai.EditValue = gridViewNhanVien.GetFocusedRowCellValue(colTrangThai);
             }
         }

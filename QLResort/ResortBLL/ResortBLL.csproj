@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ResortBLL</RootNamespace>
     <AssemblyName>ResortBLL</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,6 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietDatPhongBLL.cs" />
+    <Compile Include="ChiTietShoppingBLL.cs" />
+    <Compile Include="DatPhongBLL.cs" />
+    <Compile Include="EF_CodeFirst\ChiTietDatMonBLL.cs" />
+    <Compile Include="EF_CodeFirst\ChiTietThueXeBLL.cs" />
+    <Compile Include="EF_CodeFirst\DatMonBLL.cs" />
+    <Compile Include="EF_CodeFirst\LoaiMonBLL.cs" />
+    <Compile Include="EF_CodeFirst\LoaiXeBLL.cs" />
+    <Compile Include="EF_CodeFirst\ThucDonBLL.cs" />
+    <Compile Include="EF_CodeFirst\ThueXeBLL.cs" />
+    <Compile Include="EF_CodeFirst\XeBLL.cs" />
     <Compile Include="ExecuteBLL.cs" />
     <Compile Include="HinhAnhBLL.cs" />
     <Compile Include="KhachHangBLL.cs" />
@@ -54,6 +66,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="SanPhamBLL.cs" />
+    <Compile Include="ShoppingBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ResortDAL\ResortDAL.csproj">

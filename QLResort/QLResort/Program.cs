@@ -23,7 +23,31 @@ namespace QLResort
             SkinManager.EnableFormSkins();
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
 
-            Application.Run(new frmSanPham());
+
+            bool coHieu = true;
+            do
+            {
+                Application.Run(new frmDangNhap());
+                if (!frmDangNhap.coHieu)
+                {
+                    return;
+                }
+                switch (frmDangNhap.chucVu.ToLower())
+                {
+                    case "giám đốc":
+                        Application.Run(new frmQuanLy());
+                        coHieu = frmQuanLy.coHieu;
+                        break;
+                    case "giám đốc nhân sự":
+                        Application.Run(new frmNhanVien());
+                        coHieu = frmNhanVien.coHieu;
+                        break;
+                    case "quản lý dịch vụ":
+                        Application.Run(new frmDichVu());
+                        coHieu = frmDichVu.coHieu;
+                        break;
+                }
+            } while (coHieu);
         }
     }
 }

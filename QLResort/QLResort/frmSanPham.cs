@@ -47,8 +47,8 @@ namespace QLResort
         private void LoadLooKup()
         {
             lookLoaiSP.Properties.DataSource = GetLoaiSanPham();
-            lookLoaiSP.Properties.DisplayMember = "Ten";
             lookLoaiSP.Properties.ValueMember = "IDLoaiSanPham";
+            lookLoaiSP.Properties.DisplayMember = "Ten";
         }
 
         private DataTable GetSanPham()

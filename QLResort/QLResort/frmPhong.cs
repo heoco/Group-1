@@ -46,8 +46,8 @@ namespace QLResort
         private void LoadLooKup()
         {
             lookLoaiPhong.Properties.DataSource = GetLoaiPhong();
-            lookLoaiPhong.Properties.DisplayMember = "Ten";
             lookLoaiPhong.Properties.ValueMember = "IDLoaiPhong";
+            lookLoaiPhong.Properties.DisplayMember = "Ten";
         }
 
         private DataTable GetPhong()

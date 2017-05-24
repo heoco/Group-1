@@ -1,3 +1,4 @@
+C:\Users\heoco\Desktop\QLResort\Bin\ResortDAL.dll.config
 C:\Users\heoco\Desktop\QLResort\Bin\ResortDAL.dll
 C:\Users\heoco\Desktop\QLResort\Bin\ResortDAL.pdb
 C:\Users\heoco\Desktop\QLResort\ResortDAL\obj\Debug\ResortDAL.csprojResolveAssemblyReference.cache
@@ -15,3 +16,15 @@ E:\QLResort\Bin\ResortDAL.pdb
 E:\QLResort\ResortDAL\obj\Debug\ResortDAL.csprojResolveAssemblyReference.cache
 E:\QLResort\ResortDAL\obj\Debug\ResortDAL.dll
 E:\QLResort\ResortDAL\obj\Debug\ResortDAL.pdb
+C:\Users\MacBook\Project\TBCo\QLResort\Bin\ResortDAL.dll.config
+C:\Users\MacBook\Project\TBCo\QLResort\Bin\ResortDAL.dll
+C:\Users\MacBook\Project\TBCo\QLResort\Bin\ResortDAL.pdb
+C:\Users\MacBook\Project\TBCo\QLResort\ResortDAL\obj\Debug\ResortDAL.csprojResolveAssemblyReference.cache
+C:\Users\MacBook\Project\TBCo\QLResort\ResortDAL\obj\Debug\ResortDAL.dll
+C:\Users\MacBook\Project\TBCo\QLResort\ResortDAL\obj\Debug\ResortDAL.pdb
+C:\Users\heoco\Downloads\Compressed\QLResort\Bin\ResortDAL.dll.config
+C:\Users\heoco\Downloads\Compressed\QLResort\Bin\ResortDAL.dll
+C:\Users\heoco\Downloads\Compressed\QLResort\Bin\ResortDAL.pdb
+C:\Users\heoco\Downloads\Compressed\QLResort\ResortDAL\obj\Debug\ResortDAL.csprojResolveAssemblyReference.cache
+C:\Users\heoco\Downloads\Compressed\QLResort\ResortDAL\obj\Debug\ResortDAL.dll
+C:\Users\heoco\Downloads\Compressed\QLResort\ResortDAL\obj\Debug\ResortDAL.pdb

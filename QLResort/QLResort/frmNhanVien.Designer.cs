@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhanVien));
             this.grpNhanVien = new DevExpress.XtraEditors.GroupControl();
+            this.chkPass = new DevExpress.XtraEditors.CheckEdit();
+            this.picNhanVien = new System.Windows.Forms.PictureBox();
             this.btnChooseImage = new DevExpress.XtraEditors.SimpleButton();
             this.mmoDiaChi = new DevExpress.XtraEditors.MemoEdit();
             this.btnDong = new DevExpress.XtraEditors.SimpleButton();
@@ -79,9 +81,10 @@
             this.lblTittle = new System.Windows.Forms.Label();
             this.btnDangXuat = new DevExpress.XtraEditors.SimpleButton();
             this.lblUser = new System.Windows.Forms.Label();
-            this.picNhanVien = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.grpNhanVien)).BeginInit();
             this.grpNhanVien.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chkPass.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mmoDiaChi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgaySinh.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgaySinh.Properties)).BeginInit();
@@ -96,12 +99,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewNhanVien)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).BeginInit();
             this.SuspendLayout();
             // 
             // grpNhanVien
             // 
             this.grpNhanVien.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.grpNhanVien.Controls.Add(this.chkPass);
             this.grpNhanVien.Controls.Add(this.picNhanVien);
             this.grpNhanVien.Controls.Add(this.btnChooseImage);
             this.grpNhanVien.Controls.Add(this.mmoDiaChi);
@@ -139,6 +142,28 @@
             this.grpNhanVien.Size = new System.Drawing.Size(1264, 342);
             this.grpNhanVien.TabIndex = 0;
             this.grpNhanVien.Text = "Thông tin Nhân Viên:";
+            // 
+            // chkPass
+            // 
+            this.chkPass.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chkPass.Location = new System.Drawing.Point(475, 76);
+            this.chkPass.Name = "chkPass";
+            this.chkPass.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkPass.Properties.Appearance.Options.UseFont = true;
+            this.chkPass.Properties.Caption = "";
+            this.chkPass.Size = new System.Drawing.Size(16, 19);
+            this.chkPass.TabIndex = 21;
+            // 
+            // picNhanVien
+            // 
+            this.picNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picNhanVien.Image = global::QLResort.Properties.Resources.Account;
+            this.picNhanVien.Location = new System.Drawing.Point(1047, 76);
+            this.picNhanVien.Name = "picNhanVien";
+            this.picNhanVien.Size = new System.Drawing.Size(173, 211);
+            this.picNhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picNhanVien.TabIndex = 20;
+            this.picNhanVien.TabStop = false;
             // 
             // btnChooseImage
             // 
@@ -365,7 +390,7 @@
             this.txtPass.Name = "txtPass";
             this.txtPass.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.Properties.Appearance.Options.UseFont = true;
-            this.txtPass.Size = new System.Drawing.Size(369, 26);
+            this.txtPass.Size = new System.Drawing.Size(342, 26);
             this.txtPass.TabIndex = 1;
             // 
             // lblTrangThai
@@ -698,16 +723,6 @@
             this.lblUser.TabIndex = 5;
             this.lblUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // picNhanVien
-            // 
-            this.picNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picNhanVien.Location = new System.Drawing.Point(1047, 76);
-            this.picNhanVien.Name = "picNhanVien";
-            this.picNhanVien.Size = new System.Drawing.Size(173, 211);
-            this.picNhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picNhanVien.TabIndex = 20;
-            this.picNhanVien.TabStop = false;
-            // 
             // frmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -729,6 +744,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.grpNhanVien)).EndInit();
             this.grpNhanVien.ResumeLayout(false);
             this.grpNhanVien.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chkPass.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mmoDiaChi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgaySinh.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgaySinh.Properties)).EndInit();
@@ -743,7 +760,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlNhanVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewNhanVien)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -801,5 +817,6 @@
         private DevExpress.XtraEditors.SimpleButton btnChooseImage;
         private DevExpress.XtraGrid.Columns.GridColumn colHinhAnh;
         private System.Windows.Forms.PictureBox picNhanVien;
+        private DevExpress.XtraEditors.CheckEdit chkPass;
     }
 }

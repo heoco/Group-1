@@ -73,6 +73,19 @@ namespace ResortDAL
             throw new Exception("Không tìm thấy IDSanPham cần sửa!");
         }
 
+        public Boolean SubstractSoLuong(DataTable dt, int iD, int soLuong)
+        {
+            foreach (DataRow dr in dt.Rows)
+            {
+                if (Convert.ToInt32(dr["IDSanPham"]) == iD)
+                {
+                    dr["SoLuong"] = Convert.ToInt32(dr["SoLuong"]) - soLuong;
+                    return true;
+                }
+            }
+            throw new Exception("Không tìm thấy IDSanPham mua!");
+        }
+
         public Boolean Remove(DataTable dt, int iD)
         {
             foreach (DataRow dr in dt.Rows)
