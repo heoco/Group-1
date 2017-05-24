@@ -37,7 +37,7 @@ namespace ResortDTO.EF_CodeFirst
 
         public virtual LoaiMon LoaiMon { get; set; }
 
-        public ThucDon(int iDMon, string ten, int iDLoaiMon, decimal donGia, string moTa, bool trangThai)
+        public ThucDon(int iDMon, string ten, int iDLoaiMon, decimal? donGia, string moTa, bool? trangThai)
         {
             IDMon = iDMon;
             Ten = ten;

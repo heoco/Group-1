@@ -12,9 +12,9 @@ namespace ResortBLL.EF_CodeFirst
 {
     public class ChiTietThueXeBLL
     {
-        public List<ChiTietThueXe> GetChiTietThueXe()
+        public DataTable GetChiTietThueXe(string sql)
         {
-            return new ChiTietThueXeDAL().GetChiTietThueXe();
+            return new ChiTietThueXeDAL().GetChiTietThueXe(sql);
         }
 
         public Boolean Add(ChiTietThueXe cttx)
@@ -22,30 +22,6 @@ namespace ResortBLL.EF_CodeFirst
             try
             {
                 return new ChiTietThueXeDAL().Add(cttx);
-            }
-            catch (DBConcurrencyException ex)
-            {
-                throw ex;
-            }
-        }
-
-        public Boolean Change(ChiTietThueXe cttx)
-        {
-            try
-            {
-                return new ChiTietThueXeDAL().Change(cttx);
-            }
-            catch (DBConcurrencyException ex)
-            {
-                throw ex;
-            }
-        }
-
-        public Boolean Remove(int iD)
-        {
-            try
-            {
-                return new ChiTietThueXeDAL().Remove(iD);
             }
             catch (DBConcurrencyException ex)
             {

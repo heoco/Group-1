@@ -140,26 +140,25 @@ namespace QLResort.User_Control
             {
                 return;
             }
+            tongTien += thanhTien;
             foreach (DataRow dr in dtChoose.Rows)
             {
-                if (dr[colIDSanPham.FieldName].ToString().Equals(lookSanPham.EditValue.ToString()))
+                if (dr[colID.FieldName].ToString().Equals(lookSanPham.EditValue.ToString()))
                 {
                     dr[colSoLuong.FieldName] = Convert.ToInt32(dr[colSoLuong.FieldName]) + soLuong;
                     dr[colThanhTien.FieldName] = Convert.ToDecimal(dr[colThanhTien.FieldName]) + thanhTien;
-                    tongTien += thanhTien;
                     txtTongTien.Text = tongTien.ToString();
                     return;
                 }
             }
             DataRow newRow = dtChoose.NewRow();
-            newRow[colIDSanPham.FieldName] = lookSanPham.EditValue;
+            newRow[colID.FieldName] = lookSanPham.EditValue;
             newRow[colTen.FieldName] = lookSanPham.Text;
             newRow[colDonGia.FieldName] = donGia;
             newRow[colGiamGia.FieldName] = giamGia;
             newRow[colSoLuong.FieldName] = soLuong;
             newRow[colThanhTien.FieldName] = thanhTien;
             dtChoose.Rows.Add(newRow);
-            tongTien += thanhTien;
             txtTongTien.Text = tongTien.ToString();
         }
 
@@ -171,7 +170,7 @@ namespace QLResort.User_Control
             }
             foreach (DataRow dr in dtChoose.Rows)
             {
-                if (dr[colIDSanPham.FieldName].ToString() == lookSanPham.EditValue.ToString())
+                if (dr[colID.FieldName].ToString() == lookSanPham.EditValue.ToString())
                 {
                     tongTien += (thanhTien - Convert.ToDecimal(dr[colThanhTien.FieldName]));
                     dr[colSoLuong.FieldName] = soLuong;
@@ -191,7 +190,7 @@ namespace QLResort.User_Control
             }
             foreach (DataRow dr in dtChoose.Rows)
             {
-                if (dr[colIDSanPham.FieldName].ToString() == lookSanPham.EditValue.ToString())
+                if (dr[colID.FieldName].ToString().Equals(lookSanPham.EditValue.ToString()))
                 {
                     if (thanhTien < Convert.ToDecimal(dr[colThanhTien.FieldName]))
                     {
@@ -248,7 +247,7 @@ namespace QLResort.User_Control
             DataTable dtCTS = new ChiTietShoppingBLL().GetChiTietShopping(sql);
             foreach (DataRow dr in dtChoose.Rows)
             {
-                ChiTietShopping cts = new ChiTietShopping(iD, Convert.ToInt32(dr[colIDSanPham.FieldName]),
+                ChiTietShopping cts = new ChiTietShopping(iD, Convert.ToInt32(dr[colID.FieldName]),
                     soLuong, thanhTien);
                 try
                 {
@@ -263,7 +262,7 @@ namespace QLResort.User_Control
                 // Update SanPham: SoLuong
                 try
                 {
-                    new SanPhamBLL().SubstractSoLuong(dtSP, Convert.ToInt32(dr[colIDSanPham.FieldName]), Convert.ToInt32(dr[colSoLuong.FieldName]));
+                    new SanPhamBLL().SubstractSoLuong(dtSP, Convert.ToInt32(dr[colID.FieldName]), Convert.ToInt32(dr[colSoLuong.FieldName]));
                 }
                 catch (Exception ex)
                 {
@@ -321,7 +320,7 @@ namespace QLResort.User_Control
         private void lookSanPham_EditValueChanged(object sender, EventArgs e)
         {
             DataRow dr = dtSP.Rows[lookSanPham.ItemIndex];
-            txtIDSanPham.Text = dr[colIDSanPham.FieldName].ToString();
+            txtIDSanPham.Text = dr[colID.FieldName].ToString();
             donGia = Convert.ToDecimal(dr[colDonGia.FieldName]);
             giamGia = (!dr[colGiamGia.FieldName].ToString().Equals("")) ? Convert.ToByte(dr[colGiamGia.FieldName]) : byte.MinValue;
             ThanhTien();
@@ -335,7 +334,7 @@ namespace QLResort.User_Control
         {
             if (e.KeyChar.Equals(Convert.ToChar(Keys.Enter)))
             {
-                DataRow row = dtSP.AsEnumerable().SingleOrDefault(r => r.Field<int>(colIDSanPham.FieldName) == Convert.ToInt32(txtIDSanPham.Text));
+                DataRow row = dtSP.AsEnumerable().SingleOrDefault(r => r.Field<int>(colID.FieldName) == Convert.ToInt32(txtIDSanPham.Text));
                 if (row != null)
                 {
                     lookSanPham.EditValue = row[0];

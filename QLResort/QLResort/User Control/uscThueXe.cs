@@ -19,11 +19,10 @@ namespace QLResort.User_Control
     public partial class uscThueXe : UserControl
     {
         List<KhachHang> lstKH;
-        List<ChiTietThueXe> lstCTTS;
         List<LoaiXe> lstLoaiXe;
         List<Xe> lstXe;
         List<string> lstIDXe;
-        DataTable dtChoose;
+        DataTable dtChoose, dtCTTXfromLoaiXe;
         int iD;
         decimal tongTien;
 
@@ -35,6 +34,8 @@ namespace QLResort.User_Control
         private void uscThueXe_Load(object sender, EventArgs e)
         {
             dtChoose = new DataTable();
+            dtCTTXfromLoaiXe = new DataTable();
+            lstIDXe = new List<string>();
 
             GetIDThueXe();
             dateNgayNhan.EditValue = DateTime.Now;
@@ -80,6 +81,11 @@ namespace QLResort.User_Control
             lookLoaiXe.Properties.DisplayMember = "Ten";
         }
 
+        private void LoadIDPlaced()
+        {
+            dtCTTXfromLoaiXe = GetCTTXFromLoaiXe();
+        }
+
         private void LoadXe()
         {
             lstXe = GetXe().Where(it => it.IDLoaiXe == Convert.ToInt32(lookLoaiXe.EditValue)).ToList();
@@ -87,12 +93,18 @@ namespace QLResort.User_Control
             DateTime start, finish;
             start = Convert.ToDateTime(dateNgayNhan.EditValue);
             finish = Convert.ToDateTime(dateNgayTra.EditValue);
-            lstCTTS = GetChiTietThueXe();
-            if (lstCTTS != null)
-            {
-                lstIDXe = lstCTTS.Where(cttx => ((SubstractTime(cttx.NgayNhan, start) >= 0) && (SubstractTime(start, cttx.NgayTra) >= 0))
-                            || ((SubstractTime(cttx.NgayNhan, finish) >= 0) && (SubstractTime(finish, cttx.NgayTra) >= 0))).Select(it => it.IDXe).ToList();
 
+            lstIDXe.Clear();
+            dtCTTXfromLoaiXe = GetCTTXFromLoaiXe();
+            if (dtCTTXfromLoaiXe != null)
+            {
+                foreach (DataRow dr in dtCTTXfromLoaiXe.Rows)
+                {
+                    if (!((SubstractTime(Convert.ToDateTime(dr["NgayTra"]), start) > 0) || (SubstractTime(finish, Convert.ToDateTime(dr["NgayTra"])) > 0)))
+                    {
+                        lstIDXe.Add(dr["IDXe"].ToString());
+                    }
+                }
                 lstXe = lstXe.Where(it => !lstIDXe.Contains(it.IDXe)).ToList();
             }
 
@@ -163,11 +175,12 @@ namespace QLResort.User_Control
             return null;
         }
 
-        private List<ChiTietThueXe> GetChiTietThueXe()
+        private DataTable GetCTTXFromLoaiXe()
         {
+            string sql = "SELECT * FROM ChiTietThueXe WHERE IDXe IN(SELECT IDXe FROM Xe WHERE IDLoaiXe = " + lookLoaiXe.EditValue + ")";
             try
             {
-                return new ChiTietThueXeBLL().GetChiTietThueXe();
+                return new ChiTietThueXeBLL().GetChiTietThueXe(sql);
             }
             catch (Exception)
             {
@@ -302,6 +315,7 @@ namespace QLResort.User_Control
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi: " + ex.Message, "Chú ý!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
             // Insert CTThueXe
@@ -310,10 +324,6 @@ namespace QLResort.User_Control
                 ChiTietThueXe cttx = new ChiTietThueXe(iD, dr[CHOOSEcolID.FieldName].ToString(),
                     Convert.ToDateTime(dr[CHOOSEcolNgayNhan.FieldName]), Convert.ToDateTime(dr[CHOOSEcolNgayTra.FieldName]),
                     Convert.ToDecimal(dr[CHOOSEcolGiaThue.FieldName]));
-
-
-                //check cái đó không cần thiết vì, nếu trùng thì nó sẽ tự báo fail không cần phải check chi cho khổ
-                // đặt món a
                 try
                 {
                     if (cttx == null)
@@ -325,10 +335,12 @@ namespace QLResort.User_Control
                 catch (Exception ex)
                 {
                     MessageBox.Show("Lỗi: " + ex.Message, "Chú ý!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
             }
 
             MessageBox.Show("Thuê xe thành công...", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            uscThueXe_Load(sender, e);
         }
 
         private void btnDeleteAll_Click(object sender, EventArgs e)

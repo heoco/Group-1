@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using System.Data;
+using System.Data.SqlClient;
 
 using ResortDTO.EF_CodeFirst;
 
@@ -13,19 +14,24 @@ namespace ResortDAL.EF_CodeFirst
     public class ChiTietDatMonDAL
     {
         ThucDonContext _db;
+        DataProvider _dp;
 
         public ChiTietDatMonDAL()
         {
             _db = new ThucDonContext();
+            _dp = new DataProvider();
         }
 
-        public List<ChiTietDatMon> GetChiTietDatMon()
+        public DataTable GetChiTietDatMon(string sql)
         {
+            DataTable dt = new DataTable();
             try
             {
-                return _db.ChiTietDatMons.ToList();
+                SqlDataAdapter da = _dp.DataAdapter(sql);
+                da.Fill(dt);
+                return dt;
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
                 throw ex;
             }
@@ -35,59 +41,9 @@ namespace ResortDAL.EF_CodeFirst
         {
             try
             {
-                if (_db.ChiTietDatMons.AsEnumerable().SingleOrDefault(it
-                    => (it.IDDatMon == ctdm.IDDatMon) && (it.IDMon == ctdm.IDMon)) == null)
-                {
-                    _db.ChiTietDatMons.Add(ctdm);
-                    _db.SaveChanges();
-                    return true;
-                }
-                throw new Exception("IDDatMon và IDMon đã tồn tại!");
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public Boolean Change(ChiTietDatMon ctdm)
-        {
-            try
-            {
-                ChiTietDatMon ctDatMonToUpdate = _db.ChiTietDatMons.AsEnumerable().SingleOrDefault(it
-                    => (it.IDDatMon == ctdm.IDDatMon) && (it.IDMon == ctdm.IDMon));
-                if (ctDatMonToUpdate != null)
-                {
-                    ctDatMonToUpdate.IDMon = ctdm.IDMon;
-
-                    _db.SaveChanges();
-                    return true;
-                }
-                throw new Exception("Không tìm thấy IDDatMon hoặc IDMon!");
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public Boolean Remove(int iD)
-        {
-            try
-            {
-                ChiTietDatMon ctDatMonToDelete = _db.ChiTietDatMons.AsEnumerable().SingleOrDefault(it => it.IDDatMon == iD);
-                if (ctDatMonToDelete != null)
-                {
-                    do
-                    {
-                        _db.ChiTietDatMons.Remove(ctDatMonToDelete);
-                        ctDatMonToDelete = _db.ChiTietDatMons.Find(iD);
-                    } while (ctDatMonToDelete != null);
-
-                    _db.SaveChanges();
-                    return true;
-                }
-                throw new Exception("Không tìm thấy IDDatMon!");
+                _db.ChiTietDatMons.Add(ctdm);
+                _db.SaveChanges();
+                return true;
             }
             catch (Exception ex)
             {

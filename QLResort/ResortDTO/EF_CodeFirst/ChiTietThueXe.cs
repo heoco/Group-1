@@ -19,10 +19,8 @@ namespace ResortDTO.EF_CodeFirst
         [StringLength(10)]
         public string IDXe { get; set; }
 
-        [Column(TypeName = "smalldatetime")]
         public DateTime NgayNhan { get; set; }
 
-        [Column(TypeName = "smalldatetime")]
         public DateTime NgayTra { get; set; }
 
         [Column(TypeName = "money")]

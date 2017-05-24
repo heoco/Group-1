@@ -479,7 +479,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookKhachHang.Size = new System.Drawing.Size(191, 28);
             this.lookKhachHang.TabIndex = 139;
-            this.lookKhachHang.EditValueChanged += new System.EventHandler(this.lookLoaiMon_EditValueChanged);
             // 
             // uscDatMon
             // 

@@ -9,15 +9,20 @@ namespace ResortDTO.EF_CodeFirst
     [Table("DatMon")]
     public partial class DatMon
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public DatMon()
+        {
+            ChiTietDatMons = new HashSet<ChiTietDatMon>();
+        }
+
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int IDDatMon { get; set; }
 
-        public Int64 IDKhachHang { get; set; }
+        public long IDKhachHang { get; set; }
 
         public int IDNhanVien { get; set; }
 
-        [Column(TypeName = "smalldatetime")]
         public DateTime NgayDat { get; set; }
 
         [Column(TypeName = "money")]
@@ -28,9 +33,10 @@ namespace ResortDTO.EF_CodeFirst
 
         public bool? TrangThai { get; set; }
 
-        public virtual ChiTietDatMon ChiTietDatMon { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ChiTietDatMon> ChiTietDatMons { get; set; }
 
-        public DatMon(int iDDatMon, Int64 iDKhachHang, int iDNhanVien,
+        public DatMon(int iDDatMon, long iDKhachHang, int iDNhanVien,
             DateTime ngayDat, decimal? tongTien, string ghiChu, bool? trangThai)
         {
             IDDatMon = iDDatMon;

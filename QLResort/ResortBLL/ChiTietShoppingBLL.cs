@@ -37,30 +37,6 @@ namespace ResortBLL
             }
         }
 
-        public Boolean Change(DataTable dt, ChiTietShopping cts)
-        {
-            try
-            {
-                return new ChiTietShoppingDAL().Change(dt, cts);
-            }
-            catch (SqlException ex)
-            {
-                throw ex;
-            }
-        }
-
-        public Boolean Remove(DataTable dt, int iD, int iDSanPham)
-        {
-            try
-            {
-                return new ChiTietShoppingDAL().Remove(dt, iD, iDSanPham);
-            }
-            catch (SqlException ex)
-            {
-                throw ex;
-            }
-        }
-
         public int SaveData(ref DataTable dt)
         {
             try

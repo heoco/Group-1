@@ -22,14 +22,20 @@ namespace QLResort
 
         private void frmChiTietThueXe_Load(object sender, EventArgs e)
         {
+            LoadData();
+        }
+
+        private void LoadData()
+        {
             gridControlCTTX.DataSource = GetChiTietThueXe();
         }
 
-        private List<ChiTietThueXe> GetChiTietThueXe()
+        private DataTable GetChiTietThueXe()
         {
+            string sql = "SELECT * FROM ChiTietThueXe";
             try
             {
-                return new ChiTietThueXeBLL().GetChiTietThueXe();
+                return new ChiTietThueXeBLL().GetChiTietThueXe(sql);
             }
             catch (Exception)
             {

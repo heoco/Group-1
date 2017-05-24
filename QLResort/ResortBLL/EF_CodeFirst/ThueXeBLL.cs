@@ -40,17 +40,5 @@ namespace ResortBLL.EF_CodeFirst
                 throw ex;
             }
         }
-
-        public Boolean Remove(int iD)
-        {
-            try
-            {
-                return new ThueXeDAL().Remove(iD);
-            }
-            catch (DBConcurrencyException ex)
-            {
-                throw ex;
-            }
-        }
     }
 }

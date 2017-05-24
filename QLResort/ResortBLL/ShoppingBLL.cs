@@ -48,17 +48,6 @@ namespace ResortBLL
                 throw ex;
             }
         }
-        public Boolean Remove(DataTable dt, int iD)
-        {
-            try
-            {
-                return new ShoppingDAL().Remove(dt, iD);
-            }
-            catch (SqlException ex)
-            {
-                throw ex;
-            }
-        }
 
         public int SaveData(ref DataTable dt)
         {

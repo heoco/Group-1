@@ -52,7 +52,7 @@ namespace QLResort.User_Control
             txtSoLuong.Text = soLuong.ToString();
             txtDonGia.Text = String.Format("{0:0.0000}", donGia);
             txtThanhTien.Text = String.Format("{0:0.0000}", thanhTien);
-            txtTongTien.Text = String.Format("{0:0.0000}", donGia);
+            txtTongTien.Text = String.Format("{0:0.0000}", tongTien);
         }
 
         private void LoadLooKup()
@@ -155,13 +155,13 @@ namespace QLResort.User_Control
             {
                 return;
             }
+            tongTien += thanhTien;
             foreach (DataRow dr in dtChoose.Rows)
             {
-                if (dr[colIDMon.FieldName].ToString() == lookMon.EditValue.ToString())
+                if (dr[colIDMon.FieldName].Equals(lookMon.EditValue.ToString()))
                 {
                     dr[colSoLuong.FieldName] = Convert.ToInt32(dr[colSoLuong.FieldName]) + soLuong;
                     dr[colThanhTien.FieldName] = Convert.ToDecimal(dr[colThanhTien.FieldName]) + thanhTien;
-                    tongTien += thanhTien;
                     txtTongTien.Text = tongTien.ToString();
                     return;
                 }
@@ -173,7 +173,6 @@ namespace QLResort.User_Control
             newRow[colSoLuong.FieldName] = soLuong;
             newRow[colThanhTien.FieldName] = thanhTien;
             dtChoose.Rows.Add(newRow);
-            tongTien += thanhTien;
             txtTongTien.Text = tongTien.ToString();
         }
 
@@ -260,7 +259,7 @@ namespace QLResort.User_Control
             // Insert CTDatMon
             foreach (DataRow dr in dtChoose.Rows)
             {
-                ChiTietDatMon ctdm = new ChiTietDatMon(iD, Convert.ToInt32(dr[colIDMon.FieldName]));
+                ChiTietDatMon ctdm = new ChiTietDatMon(iD, Convert.ToInt32(dr[colIDMon.FieldName]), Convert.ToDecimal(dr[colDonGia.FieldName]));
                 try
                 {
                     if (ctdm == null)
@@ -292,7 +291,7 @@ namespace QLResort.User_Control
         {
             txtIDMon.ResetText();
             soLuong = 1;
-            donGia = thanhTien = tongTien = 0;
+            donGia = thanhTien = 0;
             LoadTextBox();
 
             LoadThucDon();
@@ -300,7 +299,7 @@ namespace QLResort.User_Control
 
         private void lookMon_EditValueChanged(object sender, EventArgs e)
         {
-            ThucDon td = thucDons[lookMon.ItemIndex];
+            ThucDon td = thucDons.AsEnumerable().SingleOrDefault(it => it.IDMon == Convert.ToInt32(lookMon.EditValue));
             txtIDMon.Text = td.IDMon.ToString();
             donGia = Convert.ToDecimal(td.DonGia);
             thanhTien = Convert.ToDecimal(donGia * soLuong);

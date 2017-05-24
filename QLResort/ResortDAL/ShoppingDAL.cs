@@ -61,29 +61,11 @@ namespace ResortDAL
             {
                 if (Convert.ToInt32(dr["IDShopping"]) == s.iD)
                 {
-                    dr["IDKhachHang"] = s.iDKhachHang;
-                    dr["IDNhanVien"] = s.iDNhanVien;
-                    dr["NgayMua"] = s.ngayMua.ToString("yyyy-MM-dd");
-                    dr["TongTien"] = s.tongTien;
-                    dr["GhiChu"] = s.ghiChu;
                     dr["TrangThai"] = s.trangThai;
                     return true;
                 }
             }
             throw new Exception("Không tìm thấy IDShopping cần sửa!");
-        }
-
-        public Boolean Remove(DataTable dt, int iD)
-        {
-            foreach (DataRow dr in dt.Rows)
-            {
-                if (Convert.ToInt32(dr["IDLoaiPhong"]) == iD)
-                {
-                    dr.Delete();
-                    return true;
-                }
-            }
-            throw new Exception("Không tìm thấy IDLoaiPhong cần xóa!");
         }
 
         public int SaveData(ref DataTable dt)

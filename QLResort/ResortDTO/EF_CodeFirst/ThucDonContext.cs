@@ -20,8 +20,8 @@ namespace ResortDTO.EF_CodeFirst
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<ChiTietDatMon>()
-                .HasOptional(e => e.DatMon)
-                .WithRequired(e => e.ChiTietDatMon);
+                .Property(e => e.DonGia)
+                .HasPrecision(19, 4);
 
             modelBuilder.Entity<DatMon>()
                 .Property(e => e.TongTien)
@@ -30,6 +30,11 @@ namespace ResortDTO.EF_CodeFirst
             modelBuilder.Entity<DatMon>()
                 .Property(e => e.GhiChu)
                 .IsUnicode(false);
+
+            modelBuilder.Entity<DatMon>()
+                .HasMany(e => e.ChiTietDatMons)
+                .WithRequired(e => e.DatMon)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<LoaiMon>()
                 .HasMany(e => e.ThucDons)

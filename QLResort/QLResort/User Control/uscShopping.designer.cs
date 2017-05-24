@@ -60,7 +60,7 @@
             this.lblID = new DevExpress.XtraEditors.LabelControl();
             this.gridControlShopping = new DevExpress.XtraGrid.GridControl();
             this.gridViewShopping = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colIDSanPham = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTen = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDonGia = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colGiamGia = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -418,7 +418,7 @@
             // gridViewShopping
             // 
             this.gridViewShopping.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colIDSanPham,
+            this.colID,
             this.colTen,
             this.colDonGia,
             this.colGiamGia,
@@ -431,11 +431,11 @@
             this.gridViewShopping.OptionsView.ShowGroupPanel = false;
             this.gridViewShopping.Click += new System.EventHandler(this.gridViewShopping_Click);
             // 
-            // colIDSanPham
+            // colID
             // 
-            this.colIDSanPham.Caption = "IDSanPham";
-            this.colIDSanPham.FieldName = "IDSanPham";
-            this.colIDSanPham.Name = "colIDSanPham";
+            this.colID.Caption = "IDSanPham";
+            this.colID.FieldName = "IDSanPham";
+            this.colID.Name = "colID";
             // 
             // colTen
             // 
@@ -600,7 +600,7 @@
         private DevExpress.XtraEditors.LabelControl lblID;
         private DevExpress.XtraGrid.GridControl gridControlShopping;
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewShopping;
-        private DevExpress.XtraGrid.Columns.GridColumn colIDSanPham;
+        private DevExpress.XtraGrid.Columns.GridColumn colID;
         private DevExpress.XtraGrid.Columns.GridColumn colTen;
         private DevExpress.XtraGrid.Columns.GridColumn colDonGia;
         private DevExpress.XtraGrid.Columns.GridColumn colGiamGia;

@@ -56,32 +56,7 @@ namespace ResortDAL.EF_CodeFirst
                 ThueXe thueXeToUpdate = _db.ThueXes.AsEnumerable().SingleOrDefault(it => it.IDThueXe == tx.IDThueXe);
                 if (thueXeToUpdate != null)
                 {
-                    thueXeToUpdate.IDKhachHang = tx.IDKhachHang;
-                    thueXeToUpdate.IDNhanVien = tx.IDNhanVien;
-                    thueXeToUpdate.NgayThue = tx.NgayThue;
-                    thueXeToUpdate.TongTien = tx.TongTien;
-                    thueXeToUpdate.GhiChu = tx.GhiChu;
                     thueXeToUpdate.TrangThai = tx.TrangThai;
-
-                    _db.SaveChanges();
-                    return true;
-                }
-                throw new Exception("Không tìm thấy IDThueXe!");
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public Boolean Remove(int iD)
-        {
-            try
-            {
-                ThueXe thueXeToDelete = _db.ThueXes.AsEnumerable().SingleOrDefault(it => it.IDThueXe == iD);
-                if (thueXeToDelete != null)
-                {
-                    _db.ThueXes.Remove(thueXeToDelete);
                     _db.SaveChanges();
                     return true;
                 }

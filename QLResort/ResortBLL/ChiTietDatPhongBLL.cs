@@ -29,29 +29,5 @@ namespace ResortBLL
                 throw ex;
             }
         }
-
-        public Boolean Change(ChiTietDatPhong ctdp)
-        {
-            try
-            {
-                return new ChiTietDatPhongDAL().Change(ctdp);
-            }
-            catch (SqlException ex)
-            {
-                throw ex;
-            }
-        }
-
-        public Boolean Remove(int iD)
-        {
-            try
-            {
-                return new ChiTietDatPhongDAL().Remove(iD);
-            }
-            catch (SqlException ex)
-            {
-                throw ex;
-            }
-        }
     }
 }

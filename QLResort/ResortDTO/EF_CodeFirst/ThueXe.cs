@@ -19,7 +19,7 @@ namespace ResortDTO.EF_CodeFirst
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int IDThueXe { get; set; }
 
-        public Int64 IDKhachHang { get; set; }
+        public long IDKhachHang { get; set; }
 
         public int IDNhanVien { get; set; }
 
