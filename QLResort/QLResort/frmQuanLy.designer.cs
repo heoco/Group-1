@@ -29,50 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLy));
-            this.picDoanhThu = new DevExpress.XtraEditors.PictureEdit();
+            this.btnDangXuat = new DevExpress.XtraEditors.SimpleButton();
             this.picNhanVien = new DevExpress.XtraEditors.PictureEdit();
             this.picDichVu = new DevExpress.XtraEditors.PictureEdit();
-            this.btnDangXuat = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.picDoanhThu.Properties)).BeginInit();
+            this.picDoanhThu = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.picNhanVien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDichVu.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDoanhThu.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picDoanhThu
-            // 
-            this.picDoanhThu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.picDoanhThu.Location = new System.Drawing.Point(0, 0);
-            this.picDoanhThu.Name = "picDoanhThu";
-            this.picDoanhThu.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picDoanhThu.Properties.Appearance.Options.UseFont = true;
-            this.picDoanhThu.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.picDoanhThu.Size = new System.Drawing.Size(684, 247);
-            this.picDoanhThu.TabIndex = 0;
-            this.picDoanhThu.DoubleClick += new System.EventHandler(this.picDoanhThu_DoubleClick);
-            // 
-            // picNhanVien
-            // 
-            this.picNhanVien.Dock = System.Windows.Forms.DockStyle.Left;
-            this.picNhanVien.Location = new System.Drawing.Point(0, 247);
-            this.picNhanVien.Name = "picNhanVien";
-            this.picNhanVien.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picNhanVien.Properties.Appearance.Options.UseFont = true;
-            this.picNhanVien.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.picNhanVien.Size = new System.Drawing.Size(343, 414);
-            this.picNhanVien.TabIndex = 0;
-            this.picNhanVien.DoubleClick += new System.EventHandler(this.picNhanVien_DoubleClick);
-            // 
-            // picDichVu
-            // 
-            this.picDichVu.Dock = System.Windows.Forms.DockStyle.Right;
-            this.picDichVu.Location = new System.Drawing.Point(343, 247);
-            this.picDichVu.Name = "picDichVu";
-            this.picDichVu.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picDichVu.Properties.Appearance.Options.UseFont = true;
-            this.picDichVu.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.picDichVu.Size = new System.Drawing.Size(341, 414);
-            this.picDichVu.TabIndex = 0;
-            this.picDichVu.DoubleClick += new System.EventHandler(this.picDichVu_DoubleClick);
             // 
             // btnDangXuat
             // 
@@ -86,6 +50,45 @@
             this.btnDangXuat.TabIndex = 4;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
+            // 
+            // picNhanVien
+            // 
+            this.picNhanVien.Dock = System.Windows.Forms.DockStyle.Left;
+            this.picNhanVien.EditValue = global::QLResort.Properties.Resources.NhanVien;
+            this.picNhanVien.Location = new System.Drawing.Point(0, 330);
+            this.picNhanVien.Name = "picNhanVien";
+            this.picNhanVien.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picNhanVien.Properties.Appearance.Options.UseFont = true;
+            this.picNhanVien.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picNhanVien.Size = new System.Drawing.Size(343, 331);
+            this.picNhanVien.TabIndex = 0;
+            this.picNhanVien.DoubleClick += new System.EventHandler(this.picNhanVien_DoubleClick);
+            // 
+            // picDichVu
+            // 
+            this.picDichVu.Dock = System.Windows.Forms.DockStyle.Right;
+            this.picDichVu.EditValue = global::QLResort.Properties.Resources.DichVu;
+            this.picDichVu.Location = new System.Drawing.Point(343, 330);
+            this.picDichVu.Name = "picDichVu";
+            this.picDichVu.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picDichVu.Properties.Appearance.Options.UseFont = true;
+            this.picDichVu.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picDichVu.Size = new System.Drawing.Size(341, 331);
+            this.picDichVu.TabIndex = 0;
+            this.picDichVu.DoubleClick += new System.EventHandler(this.picDichVu_DoubleClick);
+            // 
+            // picDoanhThu
+            // 
+            this.picDoanhThu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.picDoanhThu.EditValue = global::QLResort.Properties.Resources.DoanhThu;
+            this.picDoanhThu.Location = new System.Drawing.Point(0, 0);
+            this.picDoanhThu.Name = "picDoanhThu";
+            this.picDoanhThu.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picDoanhThu.Properties.Appearance.Options.UseFont = true;
+            this.picDoanhThu.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picDoanhThu.Size = new System.Drawing.Size(684, 330);
+            this.picDoanhThu.TabIndex = 0;
+            this.picDoanhThu.DoubleClick += new System.EventHandler(this.picDoanhThu_DoubleClick);
             // 
             // frmQuanLy
             // 
@@ -107,9 +110,9 @@
             this.Text = "Quản lý";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmQuanLy_FormClosing);
             this.Load += new System.EventHandler(this.frmQuanLy_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picDoanhThu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNhanVien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDichVu.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDoanhThu.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
