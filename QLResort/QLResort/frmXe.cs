@@ -42,9 +42,9 @@ namespace QLResort
 
         private void LoadLooKup()
         {
-            lookLoaiXe.Properties.DataSource = GetLoaiXe();
-            lookLoaiXe.Properties.DisplayMember = "Ten";
+            lookLoaiXe.Properties.DataSource = GetLoaiXe().Select(it => new { it.IDLoaiXe, it.Ten });
             lookLoaiXe.Properties.ValueMember = "IDLoaiXe";
+            lookLoaiXe.Properties.DisplayMember = "Ten";
         }
 
         private List<Xe> GetXe()

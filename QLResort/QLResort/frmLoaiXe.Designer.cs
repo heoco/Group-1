@@ -94,6 +94,7 @@
             this.btnDong.Size = new System.Drawing.Size(82, 26);
             this.btnDong.TabIndex = 7;
             this.btnDong.Text = "Đóng";
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // btnRefresh
             // 
@@ -106,6 +107,7 @@
             this.btnRefresh.Size = new System.Drawing.Size(82, 26);
             this.btnRefresh.TabIndex = 6;
             this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnXoa
             // 
@@ -118,6 +120,7 @@
             this.btnXoa.Size = new System.Drawing.Size(82, 26);
             this.btnXoa.TabIndex = 5;
             this.btnXoa.Text = "Xóa";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -130,6 +133,7 @@
             this.btnSua.Size = new System.Drawing.Size(82, 26);
             this.btnSua.TabIndex = 4;
             this.btnSua.Text = "Sửa";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -142,6 +146,7 @@
             this.btnThem.Size = new System.Drawing.Size(83, 26);
             this.btnThem.TabIndex = 3;
             this.btnThem.Text = "Thêm";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // txtTen
             // 

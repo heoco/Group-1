@@ -57,7 +57,6 @@ namespace ResortDAL.EF_CodeFirst
                 if (loaiXeToUpdate != null)
                 {
                     loaiXeToUpdate.Ten = lx.Ten;
-
                     _db.SaveChanges();
                     return true;
                 }

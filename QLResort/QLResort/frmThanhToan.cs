@@ -83,16 +83,16 @@ namespace QLResort
 
         private void BrowseDatPhong()
         {
-            string sql = "SELECT NgayDat, TongTien, TraTruoc FROM DatPhong WHERE IDKhachHang = " + Convert.ToInt64(lookKhachHang.EditValue)
+            string sql = "SELECT * FROM DatPhong WHERE IDKhachHang = " + Convert.ToInt64(lookKhachHang.EditValue)
                 + " AND TrangThai = 1";
             dtDP = new DatPhongBLL().GetDatPhong(sql);
             foreach (DataRow dr in dtDP.Rows)
             {
                 DataRow newRow = dt.NewRow();
                 newRow[0] = "Thuê phòng";
-                newRow[1] = dr[0];
-                newRow[2] = dr[1];
-                newRow[3] = dr[2];
+                newRow[1] = dr["NgayDat"];
+                newRow[2] = dr["TongTien"];
+                newRow[3] = dr["TraTruoc"];
                 newRow[4] = Convert.ToDecimal(newRow[2]) - Convert.ToDecimal(newRow[3]);
                 dt.Rows.Add(newRow);
             }
@@ -116,15 +116,15 @@ namespace QLResort
 
         private void BrowseShopping()
         {
-            string sql = "SELECT NgayMua, TongTien FROM Shopping WHERE IDKhachHang = " + Convert.ToInt64(lookKhachHang.EditValue)
+            string sql = "SELECT * FROM Shopping WHERE IDKhachHang = " + Convert.ToInt64(lookKhachHang.EditValue)
                 + " AND TrangThai = 1";
             dtS = new ShoppingBLL().GetShopping(sql);
             foreach (DataRow dr in dtS.Rows)
             {
                 DataRow newRow = dt.NewRow();
                 newRow[0] = "Shopping";
-                newRow[1] = dr[0];
-                newRow[4] = newRow[2] = dr[1];
+                newRow[1] = dr["NgayMua"];
+                newRow[4] = newRow[2] = dr["TongTien"];
                 newRow[3] = String.Format("{0:0.0000}", 0);
                 dt.Rows.Add(newRow);
             }
@@ -151,6 +151,8 @@ namespace QLResort
             ThanhToanMon();
             ThanhToanShop();
             ThanhToanXe();
+            MessageBox.Show("Thanh toán thành công!");
+            frmThanhToan_Load(sender, e);
         }
 
         private void ThanhToanPhong()
@@ -159,7 +161,7 @@ namespace QLResort
             {
                 DatPhong dp = new DatPhong(Convert.ToInt32(dr[0]), Convert.ToInt64(dr[1]), Convert.ToInt32(dr[2]),
                     Convert.ToDateTime(dr[3]), Convert.ToDecimal(dr[4]), Convert.ToDecimal(dr[5]), dr[6].ToString(),
-                    Convert.ToBoolean(dr[7]));
+                    false);
                 try
                 {
                     new DatPhongBLL().Change(dtDP, dp);
@@ -184,7 +186,7 @@ namespace QLResort
             foreach (DatMon datMon in datMons)
             {
                 DatMon dm = new DatMon(datMon.IDDatMon, datMon.IDKhachHang, datMon.IDNhanVien,
-                    datMon.NgayDat, datMon.TongTien, datMon.GhiChu, datMon.TrangThai);
+                    datMon.NgayDat, datMon.TongTien, datMon.GhiChu, false);
                 try
                 {
                     new DatMonBLL().Change(dm);
@@ -201,7 +203,7 @@ namespace QLResort
             foreach (DataRow dr in dtS.Rows)
             {
                 Shopping s = new Shopping(Convert.ToInt32(dr[0]), Convert.ToInt64(dr[1]), Convert.ToInt32(dr[2]),
-                    Convert.ToDateTime(dr[3]), Convert.ToDecimal(dr[4]), dr[5].ToString(), Convert.ToBoolean(dr[6]));
+                    Convert.ToDateTime(dr[3]), Convert.ToDecimal(dr[4]), dr[5].ToString(), false);
                 try
                 {
                     new ShoppingBLL().Change(dtS, s);
@@ -226,7 +228,7 @@ namespace QLResort
             foreach (ThueXe thueXe in thueXes)
             {
                 ThueXe tx = new ThueXe(thueXe.IDThueXe, thueXe.IDKhachHang, thueXe.IDNhanVien,
-                    thueXe.NgayThue, thueXe.TongTien, thueXe.GhiChu, thueXe.TrangThai);
+                    thueXe.NgayThue, thueXe.TongTien, thueXe.GhiChu, false);
                 try
                 {
                     new ThueXeBLL().Change(tx);

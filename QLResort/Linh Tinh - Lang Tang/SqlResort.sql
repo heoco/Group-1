@@ -16,14 +16,18 @@ CREATE PROC uspThemNhanVien
 				,@CMND int
 				,@SDT nchar(12)
 				,@BangCap nvarchar(30)
-				,@ChucVu nvarchar(15)
+				,@ChucVu nvarchar(30)
 				,@HinhAnh image
 				,@TrangThai bit
 AS
 BEGIN
-	IF EXISTS(SELECT * FROM NhanVien WHERE CMND = @CMND)
-		UPDATE NhanVien SET Pass = @Pass, DiaChi = @DiaChi, SDT = @SDT, BangCap = @BangCap, ChucVu = @ChucVu, TrangThai = 1
-			WHERE CMND = @CMND
+	IF EXISTS(SELECT * FROM NhanVien WHERE CMND = @CMND AND TrangThai = 1)
+		RAISERROR (N'Trùng CMND!', 16, 1);
+	IF EXISTS(SELECT * FROM NhanVien WHERE CMND = @CMND AND TrangThai = 0)
+		BEGIN
+			UPDATE NhanVien SET Pass = @Pass, DiaChi = @DiaChi, SDT = @SDT, BangCap = @BangCap, ChucVu = @ChucVu, HinhAnh = @HinhAnh,
+			TrangThai = 1 WHERE CMND = @CMND
+		END
 	ELSE IF EXISTS (SELECT * FROM NhanVien WHERE IDNhanVien = @IDNhanVien)
 		RAISERROR (N'Nhân viên đã tồn tại!', 16, 1);
 	ELSE
@@ -49,7 +53,7 @@ CREATE PROC uspSuaNhanVien
 				,@CMND int
 				,@SDT nchar(12)
 				,@BangCap nvarchar(30)
-				,@ChucVu nvarchar(15)
+				,@ChucVu nvarchar(30)
 				,@HinhAnh image
 				,@TrangThai bit
 AS
@@ -68,17 +72,6 @@ IF (OBJECT_ID(N'uspXoaNhanVien', 'p') IS NOT NULL)
 GO
 CREATE PROC uspXoaNhanVien
 				@IDNhanVien int out
-				,@Pass nchar(30)
-				,@Ho nvarchar(30)
-				,@Ten nvarchar(10)
-				,@GioiTinh bit
-				,@NgaySinh smalldatetime
-				,@DiaChi nvarchar(100)
-				,@CMND int
-				,@SDT nchar(12)
-				,@BangCap nvarchar(30)
-				,@ChucVu nvarchar(15)
-				,@TrangThai bit
 AS
 BEGIN
 	IF NOT EXISTS (SELECT * FROM NhanVien WHERE IDNhanVien = @IDNhanVien)
