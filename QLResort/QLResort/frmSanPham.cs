@@ -191,12 +191,12 @@ namespace QLResort
 
         private void RefreshInfo()
         {
-            txtID.Text = "";
-            txtTen.Text = "";
-            lookLoaiSP.Text = "";
-            txtDonGia.Text = "";
-            txtSoLuong.Text = "";
-            mmoMota.Text = "";
+            txtID.ResetText();
+            txtTen.ResetText();
+            lookLoaiSP.ResetText();
+            txtDonGia.ResetText();
+            txtSoLuong.ResetText();
+            mmoMota.ResetText();
         }
 
         private void btnDong_Click(object sender, EventArgs e)

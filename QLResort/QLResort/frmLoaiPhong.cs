@@ -143,11 +143,11 @@ namespace QLResort
 
         private void RefreshInfo()
         {
-            txtID.Text = "";
-            txtTen.Text = "";
-            txtGia.Text = "";
-            txtSoLuong.Text = "";
-            mmoMota.Text = "";
+            txtID.ResetText();
+            txtTen.ResetText();
+            txtGia.ResetText();
+            txtSoLuong.ResetText();
+            mmoMota.ResetText();
         }
 
         private void btnDong_Click(object sender, EventArgs e)

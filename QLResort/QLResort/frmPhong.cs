@@ -181,9 +181,9 @@ namespace QLResort
 
         private void RefreshInfo()
         {
-            txtID.Text = "";
-            txtTen.Text = "";
-            lookLoaiPhong.Text = "";
+            txtID.ResetText();
+            txtTen.ResetText();
+            lookLoaiPhong.ResetText();
             toggleTrangThai.IsOn = true;
         }
 

@@ -200,7 +200,6 @@
             this.Name = "frmHinhAnh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hình ảnh";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmHinhAnh_FormClosing);
             this.Load += new System.EventHandler(this.frmHinhAnh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grpHinhAnh)).EndInit();
             this.grpHinhAnh.ResumeLayout(false);

@@ -421,7 +421,6 @@
             this.Name = "frmThucDon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý Thực Đơn";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmThucDon_FormClosing);
             this.Load += new System.EventHandler(this.frmThucDon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grpMon)).EndInit();
             this.grpMon.ResumeLayout(false);

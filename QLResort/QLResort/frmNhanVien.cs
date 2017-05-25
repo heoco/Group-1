@@ -206,17 +206,17 @@ namespace QLResort
 
         private void RefreshInfo()
         {
-            txtID.Text = "";
-            txtPass.Text = "";
-            txtHo.Text = "";
-            txtTen.Text = "";
+            txtID.ResetText();
+            txtPass.ResetText();
+            txtHo.ResetText();
+            txtTen.ResetText();
             radNam.Checked = true;
-            dateNgaySinh.Text = "";
-            mmoDiaChi.Text = "";
-            txtCMND.Text = "";
-            txtSDT.Text = "";
-            txtBangCap.Text = "";
-            txtChucVu.Text = "";
+            dateNgaySinh.ResetText();
+            mmoDiaChi.ResetText();
+            txtCMND.ResetText();
+            txtSDT.ResetText();
+            txtBangCap.ResetText();
+            txtChucVu.ResetText();
             picNhanVien.Image = null;
             toggleTrangThai.IsOn = true;
             picNhanVien.Image = defaultIMG;
@@ -238,7 +238,7 @@ namespace QLResort
             if (gridViewNhanVien.SelectedRowsCount == 1)
             {
                 txtID.Text = gridViewNhanVien.GetFocusedRowCellValue(colID).ToString();
-                txtPass.Text = "";
+                txtPass.ResetText();
                 txtHo.Text = gridViewNhanVien.GetFocusedRowCellValue(colHo).ToString();
                 txtTen.Text = gridViewNhanVien.GetFocusedRowCellValue(colTen).ToString();
                 if (gridViewNhanVien.GetFocusedRowCellValue(colGioiTinh).ToString().Trim().ToLower() == "true")

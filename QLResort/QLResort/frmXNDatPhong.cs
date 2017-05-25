@@ -282,9 +282,9 @@ namespace QLResort
 
         private void RefeshInfo()
         {
-            txtIDPhong.Text = "";
-            dateNgayNhan.Text = "";
-            dateNgayTra.Text = "";
+            txtIDPhong.ResetText();
+            dateNgayNhan.ResetText();
+            dateNgayTra.ResetText();
         }
 
         private void gridViewCT_Click(object sender, EventArgs e)

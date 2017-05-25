@@ -176,12 +176,12 @@ namespace QLResort
 
         private void RefreshInfo()
         {
-            txtID.Text = "";
-            txtTen.Text = "";
-            txtHangSX.Text = "";
-            lookLoaiXe.Text = "";
-            txtGiaThue.Text = "";
-            mmoMota.Text = "";
+            txtID.ResetText();
+            txtTen.ResetText();
+            txtHangSX.ResetText();
+            lookLoaiXe.ResetText();
+            txtGiaThue.ResetText();
+            mmoMota.ResetText();
             toggleTrangThai.IsOn = true;
         }
 
@@ -201,14 +201,6 @@ namespace QLResort
                 txtGiaThue.Text = gridViewXe.GetFocusedRowCellValue(colGiaThue).ToString();
                 mmoMota.Text = gridViewXe.GetFocusedRowCellValue(colMoTa).ToString();
                 toggleTrangThai.EditValue = gridViewXe.GetFocusedRowCellValue(colTrangThai);
-            }
-        }
-
-        private void frmXe_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Bạn muốn đóng FORM Xe?", "Thoát!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
-            {
-                e.Cancel = true;
             }
         }
     }

@@ -136,8 +136,8 @@ namespace QLResort
 
         private void RefreshInfo()
         {
-            txtID.Text = "";
-            txtTen.Text = "";
+            txtID.ResetText();
+            txtTen.ResetText();
         }
 
         private void btnDong_Click(object sender, EventArgs e)
@@ -145,20 +145,12 @@ namespace QLResort
             this.Close();
         }
 
-        private void gridViewLoaiSanGolf_Click(object sender, EventArgs e)
+        private void gridViewLoaiXe_Click(object sender, EventArgs e)
         {
             if (gridViewLoaiXe.SelectedRowsCount == 1)
             {
                 txtID.Text = gridViewLoaiXe.GetFocusedRowCellValue(colID).ToString();
                 txtTen.Text = gridViewLoaiXe.GetFocusedRowCellValue(colTen).ToString();
-            }
-        }
-
-        private void frmLoaiSanGolf_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Bạn muốn đóng FORM Loại Sân Golf?", "Thoát!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
-            {
-                e.Cancel = true;
             }
         }
     }

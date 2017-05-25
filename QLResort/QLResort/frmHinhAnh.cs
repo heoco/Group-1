@@ -243,17 +243,9 @@ namespace QLResort
 
         private void RefreshInfo()
         {
-            txtTen.Text = "";
-            lookLoaiPhong.Text = "";
+            txtTen.ResetText();
+            lookLoaiPhong.ResetText();
             picChoose.Image = null;
-        }
-
-        private void frmHinhAnh_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Bạn muốn đóng FORM Hình Ảnh?", "Thoát!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
-            {
-                e.Cancel = true;
-            }
         }
     }
 }

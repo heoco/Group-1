@@ -613,7 +613,6 @@
             this.Name = "frmKhachHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý Khách Hàng";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmKhachHang_FormClosing);
             this.Load += new System.EventHandler(this.frmKhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlKhachHang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewKhachHang)).EndInit();

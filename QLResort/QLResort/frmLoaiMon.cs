@@ -135,8 +135,8 @@ namespace QLResort
 
         private void RefreshInfo()
         {
-            txtID.Text = "";
-            txtTen.Text = "";
+            txtID.ResetText();
+            txtTen.ResetText();
         }
 
         private void btnDong_Click(object sender, EventArgs e)
@@ -155,6 +155,10 @@ namespace QLResort
 
         private void frmLoaiMon_FormClosing(object sender, FormClosingEventArgs e)
         {
+            if (!coHieu)
+            {
+                return;
+            }
             if (MessageBox.Show("Bạn muốn đóng ứng FORM Loại Món?", "Thoát!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
             {
                 e.Cancel = true;

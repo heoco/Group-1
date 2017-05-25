@@ -213,6 +213,7 @@
             this.gridViewLoaiXe.OptionsSelection.MultiSelect = true;
             this.gridViewLoaiXe.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CellSelect;
             this.gridViewLoaiXe.OptionsView.ShowGroupPanel = false;
+            this.gridViewLoaiXe.Click += new System.EventHandler(this.gridViewLoaiXe_Click);
             // 
             // colID
             // 
@@ -241,7 +242,7 @@
             this.Controls.Add(this.grpLoaiXe);
             this.Controls.Add(this.gridControlLoaiXe);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmLoaiXe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLoaiXe";

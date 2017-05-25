@@ -41,7 +41,7 @@ namespace QLResort
 
         private void LoadLooKup()
         {
-            lookLoaiMon.Properties.DataSource = GetLoaiMon();
+            lookLoaiMon.Properties.DataSource = GetLoaiMon().Select(it => new { it.IDLoaiMon, it.Ten });
             lookLoaiMon.Properties.ValueMember = "IDLoaiMon";
             lookLoaiMon.Properties.DisplayMember = "Ten";
         }
@@ -180,11 +180,11 @@ namespace QLResort
 
         private void RefreshInfo()
         {
-            txtID.Text = "";
-            txtTen.Text = "";
-            lookLoaiMon.Text = "";
-            txtDonGia.Text = "";
-            mmoMota.Text = "";
+            txtID.ResetText();
+            txtTen.ResetText();
+            lookLoaiMon.ResetText();
+            txtDonGia.ResetText();
+            mmoMota.ResetText();
             toggleTrangThai.IsOn = true;
         }
 
@@ -203,14 +203,6 @@ namespace QLResort
                 txtDonGia.Text = gridViewThucDon.GetFocusedRowCellValue(colDonGia).ToString();
                 mmoMota.Text = gridViewThucDon.GetFocusedRowCellValue(colMoTa).ToString();
                 toggleTrangThai.EditValue = gridViewThucDon.GetFocusedRowCellValue(colTrangThai);
-            }
-        }
-
-        private void frmThucDon_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Bạn muốn đóng FORM Thực Đơn?", "Thoát!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
-            {
-                e.Cancel = true;
             }
         }
     }

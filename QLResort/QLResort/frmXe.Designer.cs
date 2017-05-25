@@ -287,8 +287,6 @@
             this.txtID.Name = "txtID";
             this.txtID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID.Properties.Appearance.Options.UseFont = true;
-            this.txtID.Properties.Mask.EditMask = "n0";
-            this.txtID.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtID.Size = new System.Drawing.Size(286, 26);
             this.txtID.TabIndex = 0;
             // 
@@ -372,7 +370,7 @@
             // colID
             // 
             this.colID.Caption = "ID";
-            this.colID.FieldName = "IDSanPham";
+            this.colID.FieldName = "IDXe";
             this.colID.Name = "colID";
             this.colID.Visible = true;
             this.colID.VisibleIndex = 0;
@@ -458,7 +456,6 @@
             this.Name = "frmXe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý Xe";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmXe_FormClosing);
             this.Load += new System.EventHandler(this.frmXe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grpXe)).EndInit();
             this.grpXe.ResumeLayout(false);

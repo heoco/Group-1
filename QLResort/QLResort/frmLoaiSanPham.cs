@@ -139,8 +139,8 @@ namespace QLResort
 
         private void RefreshInfo()
         {
-            txtID.Text = "";
-            txtTen.Text = "";
+            txtID.ResetText();
+            txtTen.ResetText();
         }
 
         private void btnDong_Click(object sender, EventArgs e)

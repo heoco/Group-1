@@ -147,16 +147,16 @@ namespace QLResort
 
         private void RefreshInfo()
         {
-            txtID.Text = "";
-            txtHo.Text = "";
-            txtTen.Text = "";
+            txtID.ResetText();
+            txtHo.ResetText();
+            txtTen.ResetText();
             radNam.Checked = true;
-            dateNgaySinh.Text = "";
-            mmoDiaChi.Text = "";
-            txtQuocTich.Text = "";
-            txtSDT.Text = "";
-            txtEmail.Text = "";
-            txtTichLuy.Text = "";
+            dateNgaySinh.ResetText();
+            mmoDiaChi.ResetText();
+            txtQuocTich.ResetText();
+            txtSDT.ResetText();
+            txtEmail.ResetText();
+            txtTichLuy.ResetText();
             toggleTrangThai.IsOn = false;
         }
 
@@ -187,18 +187,6 @@ namespace QLResort
                 txtEmail.Text = gridViewKhachHang.GetFocusedRowCellValue(colEmail).ToString();
                 txtTichLuy.Text = gridViewKhachHang.GetFocusedRowCellValue(colTichLuy).ToString();
                 toggleTrangThai.EditValue = gridViewKhachHang.GetFocusedRowCellValue(colTrangThai);
-            }
-        }
-
-        private void frmKhachHang_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (!coHieu)
-            {
-                return;
-            }
-            if (MessageBox.Show("Bạn muốn đóng FORM Khách Hàng?", "Thoát!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
-            {
-                e.Cancel = true;
             }
         }
     }

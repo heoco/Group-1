@@ -16,9 +16,9 @@ namespace QLResort
     public partial class frmDangNhap : MetroFramework.Forms.MetroForm
     {
         public static bool coHieu;
-        public static string chucVu = "";
-        public static string iDNhanVien = "";
-        public static string nameNhanVien = "";
+        public static string chucVu;
+        public static string iDNhanVien;
+        public static string nameNhanVien;
 
         public frmDangNhap()
         {
@@ -28,6 +28,9 @@ namespace QLResort
         private void frmDangNhap_Load(object sender, EventArgs e)
         {
             txtPass.Properties.PasswordChar = '*';
+            chucVu = "";
+            iDNhanVien = "";
+            nameNhanVien = "";
             coHieu = false;
         }
 
