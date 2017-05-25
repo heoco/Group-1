@@ -36,7 +36,8 @@ namespace QLResort
 
         private void LoadGridView()
         {
-            gridControlThucDon.DataSource = GetThucDon();
+            gridControlThucDon.DataSource = GetThucDon().Select(it
+                => new { it.IDMon, it.Ten, it.IDLoaiMon, it.DonGia, it.MoTa, it.TrangThai });
         }
 
         private void LoadLooKup()

@@ -33,3 +33,9 @@ C:\Users\PhongTruong\Desktop\Group-1\QLResort\Bin\ResortDTO.pdb
 C:\Users\PhongTruong\Desktop\Group-1\QLResort\ResortDTO\obj\Debug\ResortDTO.csprojResolveAssemblyReference.cache
 C:\Users\PhongTruong\Desktop\Group-1\QLResort\ResortDTO\obj\Debug\ResortDTO.dll
 C:\Users\PhongTruong\Desktop\Group-1\QLResort\ResortDTO\obj\Debug\ResortDTO.pdb
+C:\Users\heoco\Desktop\Group-1\QLResort\Bin\ResortDTO.dll.config
+C:\Users\heoco\Desktop\Group-1\QLResort\Bin\ResortDTO.dll
+C:\Users\heoco\Desktop\Group-1\QLResort\Bin\ResortDTO.pdb
+C:\Users\heoco\Desktop\Group-1\QLResort\ResortDTO\obj\Debug\ResortDTO.csprojResolveAssemblyReference.cache
+C:\Users\heoco\Desktop\Group-1\QLResort\ResortDTO\obj\Debug\ResortDTO.dll
+C:\Users\heoco\Desktop\Group-1\QLResort\ResortDTO\obj\Debug\ResortDTO.pdb

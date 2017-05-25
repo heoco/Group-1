@@ -18,6 +18,7 @@ namespace QLResort
     public partial class frmDichVu : Form
     {
         public static bool coHieu;
+        public bool children = false;
         public static int iDNhanVien;
 
         public frmDichVu()
@@ -94,6 +95,10 @@ namespace QLResort
         private void frmDichVu_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (coHieu)
+            {
+                return;
+            }
+            if (children)
             {
                 return;
             }

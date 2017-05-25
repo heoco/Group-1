@@ -35,7 +35,7 @@ namespace ResortDAL.EF_CodeFirst
         {
             try
             {
-                DatMon datMon = _db.DatMons.AsEnumerable().SingleOrDefault(it => it.IDDatMon == dm.IDDatMon);
+                DatMon datMon = _db.DatMons.Find(dm.IDDatMon);
                 if (datMon == null)
                 {
                     _db.DatMons.Add(dm);
@@ -54,7 +54,7 @@ namespace ResortDAL.EF_CodeFirst
         {
             try
             {
-                DatMon datMonToUpdate = _db.DatMons.AsEnumerable().SingleOrDefault(it => it.IDDatMon == dm.IDDatMon);
+                DatMon datMonToUpdate = _db.DatMons.Find(dm.IDDatMon);
                 if (datMonToUpdate != null)
                 {
                     datMonToUpdate.TrangThai = dm.TrangThai;

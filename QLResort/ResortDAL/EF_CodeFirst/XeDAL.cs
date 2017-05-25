@@ -35,7 +35,7 @@ namespace ResortDAL.EF_CodeFirst
         {
             try
             {
-                if (_db.Xes.AsEnumerable().SingleOrDefault(it => it.IDXe.Equals(x.IDXe)) == null)
+                if (_db.Xes.Find(x.IDXe) == null)
                 {
                     _db.Xes.Add(x);
                     _db.SaveChanges();
@@ -53,7 +53,7 @@ namespace ResortDAL.EF_CodeFirst
         {
             try
             {
-                Xe xeToUpdate = _db.Xes.AsEnumerable().SingleOrDefault(it => it.IDXe.Equals(x.IDXe));
+                Xe xeToUpdate = _db.Xes.Find(x.IDXe);
                 if (xeToUpdate != null)
                 {
                     xeToUpdate.Ten = x.Ten;
@@ -78,7 +78,7 @@ namespace ResortDAL.EF_CodeFirst
         {
             try
             {
-                Xe xeToDelete = _db.Xes.AsEnumerable().SingleOrDefault(it => it.IDXe.Equals(iD));
+                Xe xeToDelete = _db.Xes.Find(iD);
                 if (xeToDelete != null)
                 {
                     _db.Xes.Remove(xeToDelete);

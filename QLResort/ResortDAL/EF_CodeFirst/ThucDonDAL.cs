@@ -35,7 +35,7 @@ namespace ResortDAL.EF_CodeFirst
         {
             try
             {
-                if (_db.ThucDons.AsEnumerable().SingleOrDefault(it => it.IDMon == td.IDMon) == null)
+                if (_db.ThucDons.Find(td.IDMon) == null)
                 {
                     _db.ThucDons.Add(td);
                     _db.SaveChanges();
@@ -53,7 +53,7 @@ namespace ResortDAL.EF_CodeFirst
         {
             try
             {
-                ThucDon thucDonToUpdate = _db.ThucDons.AsEnumerable().SingleOrDefault(it => it.IDMon == td.IDMon);
+                ThucDon thucDonToUpdate = _db.ThucDons.Find(td.IDMon);
                 if (thucDonToUpdate != null)
                 {
                     thucDonToUpdate.Ten = td.Ten;
@@ -77,7 +77,7 @@ namespace ResortDAL.EF_CodeFirst
         {
             try
             {
-                ThucDon thucDonToDelete = _db.ThucDons.AsEnumerable().SingleOrDefault(it => it.IDMon == iD);
+                ThucDon thucDonToDelete = _db.ThucDons.Find(iD);
                 if (thucDonToDelete != null)
                 {
                     _db.ThucDons.Remove(thucDonToDelete);

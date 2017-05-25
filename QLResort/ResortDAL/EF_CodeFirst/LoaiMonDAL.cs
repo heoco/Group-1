@@ -35,7 +35,7 @@ namespace ResortDAL.EF_CodeFirst
         {
             try
             {
-                if (_db.LoaiMons.AsEnumerable().SingleOrDefault(it => it.IDLoaiMon == lm.IDLoaiMon) == null)
+                if (_db.LoaiMons.Find(lm.IDLoaiMon) == null)
                 {
                     _db.LoaiMons.Add(lm);
                     _db.SaveChanges();
@@ -53,7 +53,7 @@ namespace ResortDAL.EF_CodeFirst
         {
             try
             {
-                LoaiMon loaiMonToUpdate = _db.LoaiMons.AsEnumerable().SingleOrDefault(it => it.IDLoaiMon == lm.IDLoaiMon);
+                LoaiMon loaiMonToUpdate = _db.LoaiMons.Find(lm.IDLoaiMon);
                 if (loaiMonToUpdate != null)
                 {
                     loaiMonToUpdate.Ten = lm.Ten;
@@ -73,7 +73,7 @@ namespace ResortDAL.EF_CodeFirst
         {
             try
             {
-                LoaiMon loaiMonToDelete = _db.LoaiMons.AsEnumerable().SingleOrDefault(it => it.IDLoaiMon == iD);
+                LoaiMon loaiMonToDelete = _db.LoaiMons.Find(iD);
                 if (loaiMonToDelete != null)
                 {
                     _db.LoaiMons.Remove(loaiMonToDelete);

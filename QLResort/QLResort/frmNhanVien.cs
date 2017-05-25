@@ -12,6 +12,7 @@ namespace QLResort
     public partial class frmNhanVien : Form
     {
         public static bool coHieu;
+        public bool children = false;
         DataTable dt;
         Image img, defaultIMG;
 
@@ -265,6 +266,10 @@ namespace QLResort
         private void frmNhanVien_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (coHieu)
+            {
+                return;
+            }
+            if (children)
             {
                 return;
             }

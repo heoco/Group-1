@@ -35,7 +35,7 @@ namespace ResortDAL.EF_CodeFirst
         {
             try
             {
-                if (_db.LoaiXes.AsEnumerable().SingleOrDefault(it => it.IDLoaiXe == lx.IDLoaiXe) == null)
+                if (_db.LoaiXes.Find(lx.IDLoaiXe) == null)
                 {
                     _db.LoaiXes.Add(lx);
                     _db.SaveChanges();
@@ -53,7 +53,7 @@ namespace ResortDAL.EF_CodeFirst
         {
             try
             {
-                LoaiXe loaiXeToUpdate = _db.LoaiXes.AsEnumerable().SingleOrDefault(it => it.IDLoaiXe == lx.IDLoaiXe);
+                LoaiXe loaiXeToUpdate = _db.LoaiXes.Find(lx.IDLoaiXe);
                 if (loaiXeToUpdate != null)
                 {
                     loaiXeToUpdate.Ten = lx.Ten;
@@ -73,7 +73,7 @@ namespace ResortDAL.EF_CodeFirst
         {
             try
             {
-                LoaiXe loaiXeToDelete = _db.LoaiXes.AsEnumerable().SingleOrDefault(it => it.IDLoaiXe == iD);
+                LoaiXe loaiXeToDelete = _db.LoaiXes.Find(iD);
                 if (loaiXeToDelete != null)
                 {
                     _db.LoaiXes.Remove(loaiXeToDelete);

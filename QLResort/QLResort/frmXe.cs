@@ -36,7 +36,8 @@ namespace QLResort
 
         private void LoadGridView()
         {
-            gridControlXe.DataSource = GetXe();
+            gridControlXe.DataSource = GetXe().Select(it
+                => new { it.IDXe, it.Ten, it.HangSX, it.IDLoaiXe, it.GiaThue, it.MoTa, it.TrangThai });
         }
 
         private void LoadLooKup()
@@ -103,7 +104,8 @@ namespace QLResort
 
         private void btnLoaiXe_Click(object sender, EventArgs e)
         {
-
+            frmLoaiXe frmLX = new frmLoaiXe();
+            frmLX.ShowDialog();
         }
 
         private void btnThem_Click(object sender, EventArgs e)

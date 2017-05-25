@@ -37,6 +37,7 @@ namespace QLResort
         {
             this.Hide();
             frmNhanVien frmNV = new frmNhanVien();
+            frmNV.children = true;
             frmNV.ShowDialog();
             this.Show();
         }
@@ -45,6 +46,7 @@ namespace QLResort
         {
             this.Hide();
             frmDichVu frmDV = new frmDichVu();
+            frmDV.children = true;
             frmDV.ShowDialog();
             this.Show();
         }
