@@ -1,7 +1,9 @@
-﻿namespace QLResort.Report {
-    
-    
-    public partial class QLResort {
+﻿namespace QLResort.Report
+{
+
+
+    public partial class QLResort
+    {
     }
 }
 

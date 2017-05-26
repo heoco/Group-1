@@ -40,3 +40,9 @@ C:\Users\heoco\Desktop\Group-1\QLResort\Bin\ResortDAL.pdb
 C:\Users\heoco\Desktop\Group-1\QLResort\ResortDAL\obj\Debug\ResortDAL.csprojResolveAssemblyReference.cache
 C:\Users\heoco\Desktop\Group-1\QLResort\ResortDAL\obj\Debug\ResortDAL.dll
 C:\Users\heoco\Desktop\Group-1\QLResort\ResortDAL\obj\Debug\ResortDAL.pdb
+E:\Study\LT_CSDL\Group-1\QLResort\Bin\ResortDAL.dll.config
+E:\Study\LT_CSDL\Group-1\QLResort\Bin\ResortDAL.dll
+E:\Study\LT_CSDL\Group-1\QLResort\Bin\ResortDAL.pdb
+E:\Study\LT_CSDL\Group-1\QLResort\ResortDAL\obj\Debug\ResortDAL.csprojResolveAssemblyReference.cache
+E:\Study\LT_CSDL\Group-1\QLResort\ResortDAL\obj\Debug\ResortDAL.dll
+E:\Study\LT_CSDL\Group-1\QLResort\ResortDAL\obj\Debug\ResortDAL.pdb
