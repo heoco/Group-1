@@ -249,7 +249,7 @@ namespace QLResort.User_Control
 
             duration = Convert.ToDateTime(dateNgayTra.EditValue).Subtract(Convert.ToDateTime(dateNgayNhan.EditValue));
             time = Convert.ToInt32(duration.Days);
-            if (time < 0)
+            if (time <= 0)
             {
                 dateNgayTra.EditValue = Convert.ToDateTime(dateNgayNhan.EditValue);
                 return;

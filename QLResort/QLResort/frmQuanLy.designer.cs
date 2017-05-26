@@ -34,7 +34,7 @@
             this.picDichVu = new DevExpress.XtraEditors.PictureEdit();
             this.picDoanhThu = new DevExpress.XtraEditors.PictureEdit();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblService = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picNhanVien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDichVu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDoanhThu.Properties)).BeginInit();
@@ -96,29 +96,30 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(60, 91);
+            this.label1.Location = new System.Drawing.Point(39, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 33);
             this.label1.TabIndex = 5;
             this.label1.Text = "Revenue";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // lblService
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(497, 402);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 25);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Management";
+            this.lblService.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblService.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblService.Location = new System.Drawing.Point(500, 404);
+            this.lblService.Name = "lblService";
+            this.lblService.Size = new System.Drawing.Size(102, 59);
+            this.lblService.TabIndex = 6;
+            this.lblService.Text = "Service Customer";
+            this.lblService.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 700);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblService);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDangXuat);
             this.Controls.Add(this.picNhanVien);
@@ -149,6 +150,6 @@
         private DevExpress.XtraEditors.PictureEdit picDichVu;
         private DevExpress.XtraEditors.SimpleButton btnDangXuat;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblService;
     }
 }
