@@ -10,12 +10,6 @@ E:\Ħɛø Çσ\CShape\QLResort\Bin\ResortDAL.pdb
 E:\Ħɛø Çσ\CShape\QLResort\ResortDAL\obj\Debug\ResortDAL.csprojResolveAssemblyReference.cache
 E:\Ħɛø Çσ\CShape\QLResort\ResortDAL\obj\Debug\ResortDAL.dll
 E:\Ħɛø Çσ\CShape\QLResort\ResortDAL\obj\Debug\ResortDAL.pdb
-E:\QLResort\Bin\ResortDAL.dll.config
-E:\QLResort\Bin\ResortDAL.dll
-E:\QLResort\Bin\ResortDAL.pdb
-E:\QLResort\ResortDAL\obj\Debug\ResortDAL.csprojResolveAssemblyReference.cache
-E:\QLResort\ResortDAL\obj\Debug\ResortDAL.dll
-E:\QLResort\ResortDAL\obj\Debug\ResortDAL.pdb
 C:\Users\MacBook\Project\TBCo\QLResort\Bin\ResortDAL.dll.config
 C:\Users\MacBook\Project\TBCo\QLResort\Bin\ResortDAL.dll
 C:\Users\MacBook\Project\TBCo\QLResort\Bin\ResortDAL.pdb

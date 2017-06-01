@@ -30,20 +30,35 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.pnlDisplay = new System.Windows.Forms.Panel();
-            this.rptVw = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.dtpStart = new System.Windows.Forms.DateTimePicker();
-            this.lblStart = new System.Windows.Forms.Label();
-            this.dtpFinish = new System.Windows.Forms.DateTimePicker();
-            this.lblFinish = new System.Windows.Forms.Label();
-            this.btnPrint = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThongKe));
             this.datPhongBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qLResort = new QLResort.Report.QLResort();
+            this.pnlDisplay = new System.Windows.Forms.Panel();
+            this.rptVw = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.lblStart = new System.Windows.Forms.Label();
+            this.lblFinish = new System.Windows.Forms.Label();
             this.datPhongTableAdapter = new QLResort.Report.QLResortTableAdapters.DatPhongTableAdapter();
-            this.pnlDisplay.SuspendLayout();
+            this.dateStart = new DevExpress.XtraEditors.DateEdit();
+            this.dateFinish = new DevExpress.XtraEditors.DateEdit();
+            this.btnPrint = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.datPhongBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLResort)).BeginInit();
+            this.pnlDisplay.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateStart.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateStart.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateFinish.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateFinish.Properties)).BeginInit();
             this.SuspendLayout();
+            // 
+            // datPhongBindingSource
+            // 
+            this.datPhongBindingSource.DataMember = "DatPhong";
+            this.datPhongBindingSource.DataSource = this.qLResort;
+            // 
+            // qLResort
+            // 
+            this.qLResort.DataSetName = "QLResort";
+            this.qLResort.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // pnlDisplay
             // 
@@ -71,79 +86,109 @@
             this.rptVw.TabIndex = 0;
             this.rptVw.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.FullPage;
             // 
-            // dtpStart
-            // 
-            this.dtpStart.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dtpStart.Checked = false;
-            this.dtpStart.CustomFormat = "dd/MM/yyyy";
-            this.dtpStart.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpStart.Location = new System.Drawing.Point(344, 24);
-            this.dtpStart.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpStart.Name = "dtpStart";
-            this.dtpStart.Size = new System.Drawing.Size(146, 35);
-            this.dtpStart.TabIndex = 1;
-            this.dtpStart.Value = new System.DateTime(2017, 5, 26, 0, 0, 0, 0);
-            // 
             // lblStart
             // 
             this.lblStart.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblStart.AutoSize = true;
-            this.lblStart.Location = new System.Drawing.Point(225, 32);
+            this.lblStart.Location = new System.Drawing.Point(226, 32);
             this.lblStart.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStart.Name = "lblStart";
             this.lblStart.Size = new System.Drawing.Size(63, 18);
             this.lblStart.TabIndex = 2;
             this.lblStart.Text = "Từ Ngày";
             // 
-            // dtpFinish
-            // 
-            this.dtpFinish.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dtpFinish.CustomFormat = "dd/MM/yyyy";
-            this.dtpFinish.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFinish.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFinish.Location = new System.Drawing.Point(675, 24);
-            this.dtpFinish.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpFinish.Name = "dtpFinish";
-            this.dtpFinish.Size = new System.Drawing.Size(146, 35);
-            this.dtpFinish.TabIndex = 1;
-            this.dtpFinish.Value = new System.DateTime(2017, 5, 26, 0, 0, 0, 0);
-            // 
             // lblFinish
             // 
             this.lblFinish.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblFinish.AutoSize = true;
-            this.lblFinish.Location = new System.Drawing.Point(546, 32);
+            this.lblFinish.Location = new System.Drawing.Point(538, 32);
             this.lblFinish.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFinish.Name = "lblFinish";
             this.lblFinish.Size = new System.Drawing.Size(73, 18);
             this.lblFinish.TabIndex = 2;
             this.lblFinish.Text = "Đến Ngày";
             // 
-            // btnPrint
-            // 
-            this.btnPrint.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnPrint.Location = new System.Drawing.Point(477, 74);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(92, 44);
-            this.btnPrint.TabIndex = 3;
-            this.btnPrint.Text = "In Báo Cáo";
-            this.btnPrint.UseVisualStyleBackColor = true;
-            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
-            // 
-            // datPhongBindingSource
-            // 
-            this.datPhongBindingSource.DataMember = "DatPhong";
-            this.datPhongBindingSource.DataSource = this.qLResort;
-            // 
-            // qLResort
-            // 
-            this.qLResort.DataSetName = "QLResort";
-            this.qLResort.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // datPhongTableAdapter
             // 
             this.datPhongTableAdapter.ClearBeforeFill = true;
+            // 
+            // dateStart
+            // 
+            this.dateStart.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dateStart.EditValue = null;
+            this.dateStart.Location = new System.Drawing.Point(329, 27);
+            this.dateStart.Name = "dateStart";
+            this.dateStart.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateStart.Properties.Appearance.Options.UseFont = true;
+            this.dateStart.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateStart.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.dateStart.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateStart.Properties.AppearanceDropDown.Options.UseFont = true;
+            this.dateStart.Properties.AppearanceDropDownDisabledDate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateStart.Properties.AppearanceDropDownDisabledDate.Options.UseFont = true;
+            this.dateStart.Properties.AppearanceDropDownHeader.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateStart.Properties.AppearanceDropDownHeader.Options.UseFont = true;
+            this.dateStart.Properties.AppearanceDropDownHeaderHighlight.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateStart.Properties.AppearanceDropDownHeaderHighlight.Options.UseFont = true;
+            this.dateStart.Properties.AppearanceDropDownHighlight.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateStart.Properties.AppearanceDropDownHighlight.Options.UseFont = true;
+            this.dateStart.Properties.AppearanceFocused.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateStart.Properties.AppearanceFocused.Options.UseFont = true;
+            this.dateStart.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateStart.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.dateStart.Properties.AppearanceWeekNumber.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateStart.Properties.AppearanceWeekNumber.Options.UseFont = true;
+            this.dateStart.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateStart.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateStart.Size = new System.Drawing.Size(169, 28);
+            this.dateStart.TabIndex = 6;
+            // 
+            // dateFinish
+            // 
+            this.dateFinish.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dateFinish.EditValue = null;
+            this.dateFinish.Location = new System.Drawing.Point(651, 27);
+            this.dateFinish.Name = "dateFinish";
+            this.dateFinish.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateFinish.Properties.Appearance.Options.UseFont = true;
+            this.dateFinish.Properties.AppearanceDisabled.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateFinish.Properties.AppearanceDisabled.Options.UseFont = true;
+            this.dateFinish.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateFinish.Properties.AppearanceDropDown.Options.UseFont = true;
+            this.dateFinish.Properties.AppearanceDropDownDisabledDate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateFinish.Properties.AppearanceDropDownDisabledDate.Options.UseFont = true;
+            this.dateFinish.Properties.AppearanceDropDownHeader.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateFinish.Properties.AppearanceDropDownHeader.Options.UseFont = true;
+            this.dateFinish.Properties.AppearanceDropDownHeaderHighlight.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateFinish.Properties.AppearanceDropDownHeaderHighlight.Options.UseFont = true;
+            this.dateFinish.Properties.AppearanceDropDownHighlight.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateFinish.Properties.AppearanceDropDownHighlight.Options.UseFont = true;
+            this.dateFinish.Properties.AppearanceFocused.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateFinish.Properties.AppearanceFocused.Options.UseFont = true;
+            this.dateFinish.Properties.AppearanceReadOnly.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateFinish.Properties.AppearanceReadOnly.Options.UseFont = true;
+            this.dateFinish.Properties.AppearanceWeekNumber.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateFinish.Properties.AppearanceWeekNumber.Options.UseFont = true;
+            this.dateFinish.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateFinish.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateFinish.Size = new System.Drawing.Size(169, 28);
+            this.dateFinish.TabIndex = 6;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrint.Appearance.Options.UseFont = true;
+            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
+            this.btnPrint.Location = new System.Drawing.Point(468, 71);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(111, 50);
+            this.btnPrint.TabIndex = 7;
+            this.btnPrint.Text = "In báo cáo";
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // frmThongKe
             // 
@@ -151,10 +196,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1046, 516);
             this.Controls.Add(this.btnPrint);
+            this.Controls.Add(this.dateFinish);
+            this.Controls.Add(this.dateStart);
             this.Controls.Add(this.lblFinish);
             this.Controls.Add(this.lblStart);
-            this.Controls.Add(this.dtpFinish);
-            this.Controls.Add(this.dtpStart);
             this.Controls.Add(this.pnlDisplay);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -165,9 +210,14 @@
             this.Name = "frmThongKe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thống kê";
-            this.pnlDisplay.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.frmThongKe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datPhongBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLResort)).EndInit();
+            this.pnlDisplay.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dateStart.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateStart.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateFinish.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateFinish.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,16 +226,14 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlDisplay;
-        private System.Windows.Forms.DateTimePicker dtpStart;
         private System.Windows.Forms.Label lblStart;
-        private System.Windows.Forms.DateTimePicker dtpFinish;
         private System.Windows.Forms.Label lblFinish;
-        private System.Windows.Forms.Button btnPrint;
         private Microsoft.Reporting.WinForms.ReportViewer rptVw;
         private Report.QLResort qLResort;
         private System.Windows.Forms.BindingSource datPhongBindingSource;
         private Report.QLResortTableAdapters.DatPhongTableAdapter datPhongTableAdapter;
-
-
+        private DevExpress.XtraEditors.DateEdit dateStart;
+        private DevExpress.XtraEditors.DateEdit dateFinish;
+        private DevExpress.XtraEditors.SimpleButton btnPrint;
     }
 }

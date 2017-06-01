@@ -52,38 +52,6 @@ E:\Ħɛø Çσ\CShape\QLResort\QLResort\obj\Debug\QLResort.frmXe.resources
 E:\Ħɛø Çσ\CShape\QLResort\QLResort\obj\Debug\QLResort.Properties.Resources.resources
 E:\Ħɛø Çσ\CShape\QLResort\QLResort\obj\Debug\QLResort.csproj.GenerateResource.Cache
 E:\Ħɛø Çσ\CShape\QLResort\QLResort\obj\Debug\QLResort.exe.licenses
-E:\QLResort\Bin\QLResort.exe.config
-E:\QLResort\Bin\QLResort.exe
-E:\QLResort\Bin\QLResort.pdb
-E:\QLResort\QLResort\obj\Debug\QLResort.csprojResolveAssemblyReference.cache
-E:\QLResort\QLResort\obj\Debug\QLResort.frmChiTietDatMon.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmChiTietDatPhong.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmChiTietShopping.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmChiTietThueXe.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmDangNhap.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmDichVu.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmHinhAnh.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmThanhToan.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmXNDatPhong.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmKhachHang.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmLoaiMon.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmLoaiPhong.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmLoaiSanPham.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmNhanVien.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmPhong.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmSanPham.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmThucDon.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmXe.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.Properties.Resources.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.csproj.GenerateResource.Cache
-E:\QLResort\QLResort\obj\Debug\QLResort.exe.licenses
-E:\QLResort\QLResort\obj\Debug\QLResort.exe
-E:\QLResort\QLResort\obj\Debug\QLResort.pdb
-E:\QLResort\QLResort\obj\Debug\QLResort.User_Control.uscDatMon.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.User_Control.uscDatPhong.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.User_Control.uscShopping.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmLoaiXe.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.User_Control.uscThueXe.resources
 C:\Users\MacBook\Project\TBCo\QLResort\Bin\QLResort.exe.config
 C:\Users\MacBook\Project\TBCo\QLResort\QLResort\obj\Debug\QLResort.exe
 C:\Users\MacBook\Project\TBCo\QLResort\QLResort\obj\Debug\QLResort.pdb
@@ -153,8 +121,6 @@ C:\Users\heoco\Downloads\Compressed\QLResort\QLResort\obj\Debug\QLResort.exe.lic
 C:\Users\heoco\Downloads\Compressed\QLResort\QLResort\obj\Debug\QLResort.exe
 C:\Users\heoco\Downloads\Compressed\QLResort\QLResort\obj\Debug\QLResort.pdb
 C:\Users\heoco\Downloads\Compressed\QLResort\QLResort\obj\Debug\QLResort.frmQuanLy.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmQuanLy.resources
-E:\QLResort\QLResort\obj\Debug\QLResort.frmThongKe.resources
 C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.frmHinhAnh.resources
 C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.frmLoaiXe.resources
 C:\Users\heoco\Desktop\QLResort\QLResort\obj\Debug\QLResort.frmQuanLy.resources

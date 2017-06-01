@@ -8,11 +8,6 @@ E:\Ħɛø Çσ\CShape\QLResort\Bin\ResortBLL.pdb
 E:\Ħɛø Çσ\CShape\QLResort\ResortBLL\obj\Debug\ResortBLL.csprojResolveAssemblyReference.cache
 E:\Ħɛø Çσ\CShape\QLResort\ResortBLL\obj\Debug\ResortBLL.dll
 E:\Ħɛø Çσ\CShape\QLResort\ResortBLL\obj\Debug\ResortBLL.pdb
-E:\QLResort\Bin\ResortBLL.dll
-E:\QLResort\Bin\ResortBLL.pdb
-E:\QLResort\ResortBLL\obj\Debug\ResortBLL.csprojResolveAssemblyReference.cache
-E:\QLResort\ResortBLL\obj\Debug\ResortBLL.dll
-E:\QLResort\ResortBLL\obj\Debug\ResortBLL.pdb
 C:\Users\MacBook\Project\TBCo\QLResort\Bin\ResortBLL.dll
 C:\Users\MacBook\Project\TBCo\QLResort\Bin\ResortBLL.pdb
 C:\Users\MacBook\Project\TBCo\QLResort\ResortBLL\obj\Debug\ResortBLL.csprojResolveAssemblyReference.cache
