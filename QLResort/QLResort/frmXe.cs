@@ -106,6 +106,10 @@ namespace QLResort
         {
             frmLoaiXe frmLX = new frmLoaiXe();
             frmLX.ShowDialog();
+            if (frmLoaiXe.coHieu)
+            {
+                LoadLooKup();
+            }
         }
 
         private void btnThem_Click(object sender, EventArgs e)

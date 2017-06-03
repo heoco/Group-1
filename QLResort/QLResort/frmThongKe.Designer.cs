@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThongKe));
             this.datPhongBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qLResort = new QLResort.Report.QLResort();
@@ -76,9 +76,9 @@
             // 
             this.rptVw.Cursor = System.Windows.Forms.Cursors.Default;
             this.rptVw.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DsDatPhong";
-            reportDataSource1.Value = this.datPhongBindingSource;
-            this.rptVw.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource2.Name = "DsDatPhong";
+            reportDataSource2.Value = this.datPhongBindingSource;
+            this.rptVw.LocalReport.DataSources.Add(reportDataSource2);
             this.rptVw.LocalReport.ReportEmbeddedResource = "QLResort.Report.rpDatPhong.rdlc";
             this.rptVw.Location = new System.Drawing.Point(0, 0);
             this.rptVw.Name = "reportViewer1";

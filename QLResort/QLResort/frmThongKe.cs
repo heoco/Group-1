@@ -13,8 +13,6 @@ namespace QLResort
 {
     public partial class frmThongKe : Form
     {
-        DateTime start, finish;
-
         public frmThongKe()
         {
             InitializeComponent();
