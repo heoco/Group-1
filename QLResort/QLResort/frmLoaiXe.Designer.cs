@@ -92,7 +92,7 @@
             this.btnDong.Location = new System.Drawing.Point(514, 109);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(82, 26);
-            this.btnDong.TabIndex = 7;
+            this.btnDong.TabIndex = 6;
             this.btnDong.Text = "Đóng";
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
@@ -105,7 +105,7 @@
             this.btnRefresh.Location = new System.Drawing.Point(408, 109);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(82, 26);
-            this.btnRefresh.TabIndex = 6;
+            this.btnRefresh.TabIndex = 5;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
@@ -118,7 +118,7 @@
             this.btnXoa.Location = new System.Drawing.Point(302, 109);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(82, 26);
-            this.btnXoa.TabIndex = 5;
+            this.btnXoa.TabIndex = 4;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
@@ -131,7 +131,7 @@
             this.btnSua.Location = new System.Drawing.Point(196, 109);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(82, 26);
-            this.btnSua.TabIndex = 4;
+            this.btnSua.TabIndex = 3;
             this.btnSua.Text = "Sửa";
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
@@ -144,7 +144,7 @@
             this.btnThem.Location = new System.Drawing.Point(89, 109);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(83, 26);
-            this.btnThem.TabIndex = 3;
+            this.btnThem.TabIndex = 2;
             this.btnThem.Text = "Thêm";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
@@ -199,7 +199,7 @@
             this.gridControlLoaiXe.MainView = this.gridViewLoaiXe;
             this.gridControlLoaiXe.Name = "gridControlLoaiXe";
             this.gridControlLoaiXe.Size = new System.Drawing.Size(684, 404);
-            this.gridControlLoaiXe.TabIndex = 5;
+            this.gridControlLoaiXe.TabIndex = 0;
             this.gridControlLoaiXe.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewLoaiXe});
             // 

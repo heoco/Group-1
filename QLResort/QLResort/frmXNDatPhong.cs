@@ -16,6 +16,7 @@ namespace QLResort
     public partial class frmXNDatPhong : Form
     {
         public static bool coHieu;
+        public List<Tuple<int, DateTime, DateTime>> lstSuccess, lstRemove;
         DataTable dtChoose;
         List<KhachHang> lstKH;
         int iD, iDNhanVien;
@@ -31,6 +32,8 @@ namespace QLResort
         private void frmXNDatPhong_Load(object sender, EventArgs e)
         {
             coHieu = false;
+            lstSuccess = new List<Tuple<int, DateTime, DateTime>>();
+            lstRemove = new List<Tuple<int, DateTime, DateTime>>();
             dtChoose = new DataTable();
             lstKH = new List<KhachHang>();
 
@@ -42,7 +45,7 @@ namespace QLResort
             txtNhanVien.Text = iDNhanVien.ToString();
             txtTraTruoc.Text = traTruoc.ToString();
             txtGiamGia.Text = giamGia.ToString();
-            
+
             LoadData();
             txtTraTruoc.EditValueChanged += new EventHandler(txtTraTruoc_EditValueChanged);
             txtGiamGia.EditValueChanged += new EventHandler(txtGiamGia_EditValueChanged);
@@ -89,6 +92,7 @@ namespace QLResort
             dt.Columns.Add(colNgayTra.FieldName);
             dt.Columns.Add(colThanhTien.FieldName);
 
+            lstSuccess = User_Control.uscDatPhong.lstChoose;
             string sql;
             for (int i = 0; i < User_Control.uscDatPhong.lstChoose.Count; i++)
             {
@@ -222,7 +226,10 @@ namespace QLResort
             }
 
             coHieu = true;
-            MessageBox.Show("Đặt phòng thành công...", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            Form frmTB = GetFormThongBao();
+            frmTB.ShowDialog();
+
             this.Close();
         }
 
@@ -237,6 +244,11 @@ namespace QLResort
             {
                 if (dr[colIDPhong.FieldName].ToString() == txtIDPhong.Text.Trim())
                 {
+                    int index = dtChoose.Rows.IndexOf(dr);
+                    lstSuccess.RemoveAt(index);
+                    lstSuccess.Add(new Tuple<int, DateTime, DateTime>(Convert.ToInt32(dr[colIDPhong.FieldName]),
+                        Convert.ToDateTime(dateNgayNhan.EditValue), Convert.ToDateTime(dateNgayTra.EditValue)));
+
                     dr[colNgayNhan.FieldName] = Convert.ToDateTime(dateNgayNhan.EditValue).ToString("dd/MM/yyyy");
                     dr[colNgayTra.FieldName] = Convert.ToDateTime(dateNgayTra.EditValue).ToString("dd/MM/yyyy");
 
@@ -262,6 +274,9 @@ namespace QLResort
             {
                 if (dr[colIDPhong.FieldName].ToString() == txtIDPhong.Text.Trim())
                 {
+                    int index = dtChoose.Rows.IndexOf(dr);
+                    lstRemove.Add(lstSuccess[index]);
+                    lstSuccess.RemoveAt(index);
                     tongTien -= Convert.ToDecimal(dr[colThanhTien.FieldName]);
                     txtTongTien.Text = tongTien.ToString();
                     dr.Delete();
@@ -365,6 +380,32 @@ namespace QLResort
         {
             tongThu = Math.Ceiling(tongTien * (100 - giamGia) / 100);
             txtTongThu.Text = String.Format("{0:0.0000}", tongThu);
+        }
+
+        private Form GetFormThongBao()
+        {
+            Form frmTB = new Form();
+            frmTB.Size = new Size(500, 500);
+            frmTB.StartPosition = FormStartPosition.CenterScreen;
+            Label lbl = new Label();
+            frmTB.Controls.Add(lbl);
+            lbl.Text = "Chi tiết vừa đặt";
+            lbl.AutoSize = false;
+            lbl.Dock = DockStyle.Top;
+            lbl.Height = 69;
+            lbl.TextAlign = ContentAlignment.MiddleCenter;
+            Font font = new Font("Times New Roman", 19);
+            lbl.Font = font;
+
+            DataGridView dgv = new DataGridView();
+            frmTB.Controls.Add(dgv);
+            dgv.DataSource = dtChoose;
+            dgv.BackgroundColor = Color.White;
+            dgv.Dock = DockStyle.Bottom;
+            dgv.Height = frmTB.ClientRectangle.Height - lbl.Height;
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            return frmTB;
         }
 
         private void txtTraTruoc_EditValueChanged(object sender, EventArgs e)

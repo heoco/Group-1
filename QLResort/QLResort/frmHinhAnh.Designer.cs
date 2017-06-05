@@ -102,7 +102,7 @@
             this.btnChooseImage.Location = new System.Drawing.Point(5, 25);
             this.btnChooseImage.Name = "btnChooseImage";
             this.btnChooseImage.Size = new System.Drawing.Size(88, 26);
-            this.btnChooseImage.TabIndex = 8;
+            this.btnChooseImage.TabIndex = 0;
             this.btnChooseImage.Text = "Chọn hình";
             this.btnChooseImage.Click += new System.EventHandler(this.btnChooseImage_Click);
             // 
@@ -114,7 +114,7 @@
             this.btnRefresh.Location = new System.Drawing.Point(359, 25);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(82, 26);
-            this.btnRefresh.TabIndex = 7;
+            this.btnRefresh.TabIndex = 5;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
@@ -126,7 +126,7 @@
             this.btnXoa.Location = new System.Drawing.Point(273, 428);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(82, 26);
-            this.btnXoa.TabIndex = 6;
+            this.btnXoa.TabIndex = 4;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
@@ -138,7 +138,7 @@
             this.btnSua.Location = new System.Drawing.Point(183, 428);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(82, 26);
-            this.btnSua.TabIndex = 5;
+            this.btnSua.TabIndex = 3;
             this.btnSua.Text = "Sửa";
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
@@ -150,7 +150,7 @@
             this.btnThem.Location = new System.Drawing.Point(92, 428);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(83, 26);
-            this.btnThem.TabIndex = 4;
+            this.btnThem.TabIndex = 2;
             this.btnThem.Text = "Thêm";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
@@ -161,7 +161,7 @@
             this.pnlHinhAnh.Location = new System.Drawing.Point(0, 50);
             this.pnlHinhAnh.Name = "pnlHinhAnh";
             this.pnlHinhAnh.Size = new System.Drawing.Size(185, 466);
-            this.pnlHinhAnh.TabIndex = 16;
+            this.pnlHinhAnh.TabIndex = 1;
             // 
             // lblLoaiPhong
             // 
@@ -182,7 +182,7 @@
             this.lookLoaiPhong.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookLoaiPhong.Size = new System.Drawing.Size(362, 26);
-            this.lookLoaiPhong.TabIndex = 15;
+            this.lookLoaiPhong.TabIndex = 0;
             this.lookLoaiPhong.EditValueChanged += new System.EventHandler(this.lookLoaiPhong_EditValueChanged);
             // 
             // frmHinhAnh

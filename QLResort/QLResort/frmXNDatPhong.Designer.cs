@@ -388,7 +388,7 @@
             this.btnHuy.Location = new System.Drawing.Point(883, 213);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(85, 52);
-            this.btnHuy.TabIndex = 10;
+            this.btnHuy.TabIndex = 4;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
@@ -401,7 +401,7 @@
             this.btnKhachHang.Location = new System.Drawing.Point(620, 113);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.Size = new System.Drawing.Size(26, 26);
-            this.btnKhachHang.TabIndex = 6;
+            this.btnKhachHang.TabIndex = 1;
             this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
             // btnOK
@@ -413,7 +413,7 @@
             this.btnOK.Location = new System.Drawing.Point(777, 213);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(85, 52);
-            this.btnOK.TabIndex = 10;
+            this.btnOK.TabIndex = 3;
             this.btnOK.Text = "OK";
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
@@ -472,7 +472,7 @@
             this.txtTraTruoc.Properties.Mask.EditMask = "n0";
             this.txtTraTruoc.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtTraTruoc.Size = new System.Drawing.Size(191, 28);
-            this.txtTraTruoc.TabIndex = 27;
+            this.txtTraTruoc.TabIndex = 2;
             // 
             // lblTongThu
             // 
@@ -540,7 +540,7 @@
             this.lookKhachHang.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookKhachHang.Size = new System.Drawing.Size(191, 28);
-            this.lookKhachHang.TabIndex = 79;
+            this.lookKhachHang.TabIndex = 0;
             this.lookKhachHang.EditValueChanged += new System.EventHandler(this.lookKhachHang_EditValueChanged);
             // 
             // frmXNDatPhong

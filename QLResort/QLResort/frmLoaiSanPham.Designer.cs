@@ -82,7 +82,7 @@
             this.btnHuy.Location = new System.Drawing.Point(389, 155);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(83, 26);
-            this.btnHuy.TabIndex = 8;
+            this.btnHuy.TabIndex = 6;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
@@ -128,7 +128,7 @@
             this.btnLuu.Location = new System.Drawing.Point(12, 155);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(83, 26);
-            this.btnLuu.TabIndex = 7;
+            this.btnLuu.TabIndex = 5;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
@@ -152,7 +152,7 @@
             this.btnDong.Location = new System.Drawing.Point(239, 155);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(82, 26);
-            this.btnDong.TabIndex = 6;
+            this.btnDong.TabIndex = 8;
             this.btnDong.Text = "Đóng";
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
@@ -165,7 +165,7 @@
             this.btnRefresh.Location = new System.Drawing.Point(149, 155);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(82, 26);
-            this.btnRefresh.TabIndex = 5;
+            this.btnRefresh.TabIndex = 7;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
@@ -215,7 +215,7 @@
             this.gridControlLoaiSanPham.MainView = this.gridViewLoaiSanPham;
             this.gridControlLoaiSanPham.Name = "gridControlLoaiSanPham";
             this.gridControlLoaiSanPham.Size = new System.Drawing.Size(484, 177);
-            this.gridControlLoaiSanPham.TabIndex = 1;
+            this.gridControlLoaiSanPham.TabIndex = 0;
             this.gridControlLoaiSanPham.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewLoaiSanPham});
             // 

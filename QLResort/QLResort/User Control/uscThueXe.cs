@@ -100,7 +100,7 @@ namespace QLResort.User_Control
             {
                 foreach (DataRow dr in dtCTTXfromLoaiXe.Rows)
                 {
-                    if (!((SubstractTime(Convert.ToDateTime(dr["NgayTra"]), start) > 0) || (SubstractTime(finish, Convert.ToDateTime(dr["NgayTra"])) > 0)))
+                    if (!((SubstractTime(Convert.ToDateTime(dr["NgayTra"]), start) > 0) || (SubstractTime(finish, Convert.ToDateTime(dr["NgayNhan"])) > 0)))
                     {
                         lstIDXe.Add(dr["IDXe"].ToString());
                     }
@@ -238,8 +238,7 @@ namespace QLResort.User_Control
 
         private void dateNgayNhan_EditValueChanged(object sender, EventArgs e)
         {
-            TimeSpan duration = Convert.ToDateTime(dateNgayNhan.EditValue).Subtract(DateTime.Now);
-            int time = Convert.ToInt32(duration.Days);
+            int time = SubstractTime(DateTime.Now, Convert.ToDateTime(dateNgayNhan.EditValue));
             if (time < 0)
             {
                 MessageBox.Show("Không thể chọn ngày trong quá khứ!", "Chú ý!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -247,8 +246,7 @@ namespace QLResort.User_Control
                 return;
             }
 
-            duration = Convert.ToDateTime(dateNgayTra.EditValue).Subtract(Convert.ToDateTime(dateNgayNhan.EditValue));
-            time = Convert.ToInt32(duration.Days);
+            time = SubstractTime(Convert.ToDateTime(dateNgayNhan.EditValue), Convert.ToDateTime(dateNgayTra.EditValue));
             if (time <= 0)
             {
                 dateNgayTra.EditValue = Convert.ToDateTime(dateNgayNhan.EditValue);

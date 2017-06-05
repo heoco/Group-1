@@ -23,7 +23,6 @@ namespace QLResort
             SkinManager.EnableFormSkins();
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
 
-
             bool coHieu = true;
             do
             {
@@ -45,6 +44,9 @@ namespace QLResort
                     case "quản lý dịch vụ":
                         Application.Run(new frmDichVu());
                         coHieu = frmDichVu.coHieu;
+                        break;
+                    default:
+                        MessageBox.Show("Không có quyền truy cập!", "Chú ý!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         break;
                 }
             } while (coHieu);

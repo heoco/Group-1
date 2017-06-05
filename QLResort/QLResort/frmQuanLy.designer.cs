@@ -49,7 +49,7 @@
             this.btnDangXuat.Location = new System.Drawing.Point(852, 6);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(99, 27);
-            this.btnDangXuat.TabIndex = 4;
+            this.btnDangXuat.TabIndex = 3;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
@@ -63,7 +63,7 @@
             this.picNhanVien.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.picNhanVien.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.picNhanVien.Size = new System.Drawing.Size(466, 261);
-            this.picNhanVien.TabIndex = 0;
+            this.picNhanVien.TabIndex = 1;
             this.picNhanVien.DoubleClick += new System.EventHandler(this.picNhanVien_DoubleClick);
             // 
             // picDichVu
@@ -75,7 +75,7 @@
             this.picDichVu.Properties.Appearance.Options.UseFont = true;
             this.picDichVu.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.picDichVu.Size = new System.Drawing.Size(488, 261);
-            this.picDichVu.TabIndex = 0;
+            this.picDichVu.TabIndex = 2;
             this.picDichVu.DoubleClick += new System.EventHandler(this.picDichVu_DoubleClick);
             // 
             // picDoanhThu

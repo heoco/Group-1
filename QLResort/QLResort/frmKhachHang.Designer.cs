@@ -97,7 +97,7 @@
             this.gridControlKhachHang.MainView = this.gridViewKhachHang;
             this.gridControlKhachHang.Name = "gridControlKhachHang";
             this.gridControlKhachHang.Size = new System.Drawing.Size(1264, 267);
-            this.gridControlKhachHang.TabIndex = 1;
+            this.gridControlKhachHang.TabIndex = 0;
             this.gridControlKhachHang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewKhachHang});
             // 
@@ -357,7 +357,7 @@
             this.btnDong.Location = new System.Drawing.Point(836, 265);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(82, 26);
-            this.btnDong.TabIndex = 17;
+            this.btnDong.TabIndex = 16;
             this.btnDong.Text = "Đóng";
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
@@ -370,7 +370,7 @@
             this.btnRefresh.Location = new System.Drawing.Point(714, 265);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(82, 26);
-            this.btnRefresh.TabIndex = 16;
+            this.btnRefresh.TabIndex = 15;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
@@ -383,7 +383,7 @@
             this.btnXoa.Location = new System.Drawing.Point(592, 265);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(82, 26);
-            this.btnXoa.TabIndex = 15;
+            this.btnXoa.TabIndex = 14;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
@@ -396,7 +396,7 @@
             this.btnSua.Location = new System.Drawing.Point(470, 265);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(82, 26);
-            this.btnSua.TabIndex = 14;
+            this.btnSua.TabIndex = 13;
             this.btnSua.Text = "Sửa";
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
@@ -409,7 +409,7 @@
             this.btnThem.Location = new System.Drawing.Point(347, 265);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(83, 26);
-            this.btnThem.TabIndex = 13;
+            this.btnThem.TabIndex = 12;
             this.btnThem.Text = "Thêm";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 

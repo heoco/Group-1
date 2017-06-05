@@ -39,3 +39,9 @@ E:\Study\LT_CSDL\Group-1\QLResort\Bin\ResortDTO.pdb
 E:\Study\LT_CSDL\Group-1\QLResort\ResortDTO\obj\Debug\ResortDTO.csprojResolveAssemblyReference.cache
 E:\Study\LT_CSDL\Group-1\QLResort\ResortDTO\obj\Debug\ResortDTO.dll
 E:\Study\LT_CSDL\Group-1\QLResort\ResortDTO\obj\Debug\ResortDTO.pdb
+E:\QLResort\Bin\ResortDTO.dll.config
+E:\QLResort\Bin\ResortDTO.dll
+E:\QLResort\Bin\ResortDTO.pdb
+E:\QLResort\ResortDTO\obj\Debug\ResortDTO.csprojResolveAssemblyReference.cache
+E:\QLResort\ResortDTO\obj\Debug\ResortDTO.dll
+E:\QLResort\ResortDTO\obj\Debug\ResortDTO.pdb

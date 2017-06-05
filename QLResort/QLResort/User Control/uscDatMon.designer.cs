@@ -158,7 +158,7 @@
             this.btnXoa.Location = new System.Drawing.Point(851, 209);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(27, 26);
-            this.btnXoa.TabIndex = 143;
+            this.btnXoa.TabIndex = 8;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
@@ -170,7 +170,7 @@
             this.btnSua.Location = new System.Drawing.Point(808, 209);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(27, 26);
-            this.btnSua.TabIndex = 142;
+            this.btnSua.TabIndex = 7;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
@@ -182,7 +182,7 @@
             this.btnThem.Location = new System.Drawing.Point(764, 207);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(27, 26);
-            this.btnThem.TabIndex = 141;
+            this.btnThem.TabIndex = 6;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // txtTongTien
@@ -206,7 +206,7 @@
             this.lookMon.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookMon.Size = new System.Drawing.Size(191, 28);
-            this.lookMon.TabIndex = 139;
+            this.lookMon.TabIndex = 3;
             this.lookMon.EditValueChanged += new System.EventHandler(this.lookMon_EditValueChanged);
             // 
             // txtDonGia
@@ -242,7 +242,7 @@
             this.txtIDMon.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtIDMon.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtIDMon.Size = new System.Drawing.Size(45, 28);
-            this.txtIDMon.TabIndex = 136;
+            this.txtIDMon.TabIndex = 4;
             this.txtIDMon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIDMon_KeyPress);
             // 
             // txtSoLuong
@@ -254,7 +254,7 @@
             this.txtSoLuong.Properties.Mask.EditMask = "n0";
             this.txtSoLuong.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtSoLuong.Size = new System.Drawing.Size(82, 28);
-            this.txtSoLuong.TabIndex = 135;
+            this.txtSoLuong.TabIndex = 5;
             this.txtSoLuong.EditValueChanged += new System.EventHandler(this.txtSoLuong_EditValueChanged);
             // 
             // lblTongTien
@@ -331,7 +331,7 @@
             this.btnKhachHang.Location = new System.Drawing.Point(765, 98);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.Size = new System.Drawing.Size(26, 26);
-            this.btnKhachHang.TabIndex = 127;
+            this.btnKhachHang.TabIndex = 1;
             this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
             // btnHuy
@@ -343,7 +343,7 @@
             this.btnHuy.Location = new System.Drawing.Point(1166, 96);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(82, 30);
-            this.btnHuy.TabIndex = 126;
+            this.btnHuy.TabIndex = 10;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
@@ -399,7 +399,7 @@
             this.DatMon.Location = new System.Drawing.Point(1023, 96);
             this.DatMon.Name = "DatMon";
             this.DatMon.Size = new System.Drawing.Size(113, 30);
-            this.DatMon.TabIndex = 124;
+            this.DatMon.TabIndex = 9;
             this.DatMon.Text = "Đặt món";
             this.DatMon.Click += new System.EventHandler(this.DatMon_Click);
             // 
@@ -465,7 +465,7 @@
             this.lookLoaiMon.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookLoaiMon.Size = new System.Drawing.Size(191, 28);
-            this.lookLoaiMon.TabIndex = 139;
+            this.lookLoaiMon.TabIndex = 2;
             this.lookLoaiMon.EditValueChanged += new System.EventHandler(this.lookLoaiMon_EditValueChanged);
             // 
             // lookKhachHang
@@ -478,7 +478,7 @@
             this.lookKhachHang.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookKhachHang.Size = new System.Drawing.Size(191, 28);
-            this.lookKhachHang.TabIndex = 139;
+            this.lookKhachHang.TabIndex = 0;
             // 
             // uscDatMon
             // 

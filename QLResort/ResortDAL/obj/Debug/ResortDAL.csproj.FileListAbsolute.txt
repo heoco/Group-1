@@ -40,3 +40,9 @@ E:\Study\LT_CSDL\Group-1\QLResort\Bin\ResortDAL.pdb
 E:\Study\LT_CSDL\Group-1\QLResort\ResortDAL\obj\Debug\ResortDAL.csprojResolveAssemblyReference.cache
 E:\Study\LT_CSDL\Group-1\QLResort\ResortDAL\obj\Debug\ResortDAL.dll
 E:\Study\LT_CSDL\Group-1\QLResort\ResortDAL\obj\Debug\ResortDAL.pdb
+E:\QLResort\Bin\ResortDAL.dll.config
+E:\QLResort\Bin\ResortDAL.dll
+E:\QLResort\Bin\ResortDAL.pdb
+E:\QLResort\ResortDAL\obj\Debug\ResortDAL.csprojResolveAssemblyReference.cache
+E:\QLResort\ResortDAL\obj\Debug\ResortDAL.dll
+E:\QLResort\ResortDAL\obj\Debug\ResortDAL.pdb

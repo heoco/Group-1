@@ -107,9 +107,8 @@ namespace QLResort
                 DataRow newRow = dt.NewRow();
                 newRow[0] = "Đặt món";
                 newRow[1] = dm.NgayDat;
-                newRow[2] = dm.TongTien;
-                newRow[3] = Convert.ToDecimal(0);
-                newRow[4] = String.Format("{0:0.0000}", 0);
+                newRow[4] = newRow[2] = dm.TongTien;
+                newRow[3] = String.Format("{0:0.0000}", 0);
                 dt.Rows.Add(newRow);
             }
         }

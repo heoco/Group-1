@@ -152,7 +152,7 @@
             this.chkPass.Properties.Appearance.Options.UseFont = true;
             this.chkPass.Properties.Caption = "";
             this.chkPass.Size = new System.Drawing.Size(16, 19);
-            this.chkPass.TabIndex = 21;
+            this.chkPass.TabIndex = 2;
             // 
             // picNhanVien
             // 
@@ -171,7 +171,7 @@
             this.btnChooseImage.Location = new System.Drawing.Point(1092, 302);
             this.btnChooseImage.Name = "btnChooseImage";
             this.btnChooseImage.Size = new System.Drawing.Size(82, 26);
-            this.btnChooseImage.TabIndex = 19;
+            this.btnChooseImage.TabIndex = 14;
             this.btnChooseImage.Text = "Chọn ảnh";
             this.btnChooseImage.Click += new System.EventHandler(this.btnChooseImage_Click);
             // 
@@ -182,7 +182,7 @@
             this.mmoDiaChi.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mmoDiaChi.Properties.Appearance.Options.UseFont = true;
             this.mmoDiaChi.Size = new System.Drawing.Size(369, 50);
-            this.mmoDiaChi.TabIndex = 7;
+            this.mmoDiaChi.TabIndex = 8;
             // 
             // btnDong
             // 
@@ -193,7 +193,7 @@
             this.btnDong.Location = new System.Drawing.Point(836, 302);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(82, 26);
-            this.btnDong.TabIndex = 18;
+            this.btnDong.TabIndex = 19;
             this.btnDong.Text = "Đóng";
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
@@ -206,7 +206,7 @@
             this.btnRefresh.Location = new System.Drawing.Point(714, 302);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(82, 26);
-            this.btnRefresh.TabIndex = 17;
+            this.btnRefresh.TabIndex = 18;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
@@ -218,7 +218,7 @@
             this.radNu.Location = new System.Drawing.Point(217, 153);
             this.radNu.Name = "radNu";
             this.radNu.Size = new System.Drawing.Size(48, 23);
-            this.radNu.TabIndex = 5;
+            this.radNu.TabIndex = 6;
             this.radNu.Text = "Nữ";
             this.radNu.UseVisualStyleBackColor = true;
             // 
@@ -231,7 +231,7 @@
             this.radNam.Location = new System.Drawing.Point(122, 153);
             this.radNam.Name = "radNam";
             this.radNam.Size = new System.Drawing.Size(57, 23);
-            this.radNam.TabIndex = 4;
+            this.radNam.TabIndex = 5;
             this.radNam.TabStop = true;
             this.radNam.Text = "Nam";
             this.radNam.UseVisualStyleBackColor = true;
@@ -267,7 +267,7 @@
             this.dateNgaySinh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateNgaySinh.Size = new System.Drawing.Size(369, 26);
-            this.dateNgaySinh.TabIndex = 6;
+            this.dateNgaySinh.TabIndex = 7;
             // 
             // toggleTrangThai
             // 
@@ -280,7 +280,7 @@
             this.toggleTrangThai.Properties.OffText = "Nghỉ việc";
             this.toggleTrangThai.Properties.OnText = "Còn làm";
             this.toggleTrangThai.Size = new System.Drawing.Size(147, 29);
-            this.toggleTrangThai.TabIndex = 12;
+            this.toggleTrangThai.TabIndex = 13;
             // 
             // btnXoa
             // 
@@ -291,7 +291,7 @@
             this.btnXoa.Location = new System.Drawing.Point(592, 302);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(82, 26);
-            this.btnXoa.TabIndex = 16;
+            this.btnXoa.TabIndex = 17;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
@@ -304,7 +304,7 @@
             this.btnSua.Location = new System.Drawing.Point(470, 302);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(82, 26);
-            this.btnSua.TabIndex = 15;
+            this.btnSua.TabIndex = 16;
             this.btnSua.Text = "Sửa";
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
@@ -317,7 +317,7 @@
             this.btnThem.Location = new System.Drawing.Point(347, 302);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(83, 26);
-            this.btnThem.TabIndex = 14;
+            this.btnThem.TabIndex = 15;
             this.btnThem.Text = "Thêm";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
@@ -329,7 +329,7 @@
             this.txtTen.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTen.Properties.Appearance.Options.UseFont = true;
             this.txtTen.Size = new System.Drawing.Size(102, 26);
-            this.txtTen.TabIndex = 3;
+            this.txtTen.TabIndex = 4;
             // 
             // txtChucVu
             // 
@@ -339,7 +339,7 @@
             this.txtChucVu.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtChucVu.Properties.Appearance.Options.UseFont = true;
             this.txtChucVu.Size = new System.Drawing.Size(369, 26);
-            this.txtChucVu.TabIndex = 11;
+            this.txtChucVu.TabIndex = 12;
             // 
             // txtBangCap
             // 
@@ -349,7 +349,7 @@
             this.txtBangCap.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBangCap.Properties.Appearance.Options.UseFont = true;
             this.txtBangCap.Size = new System.Drawing.Size(369, 26);
-            this.txtBangCap.TabIndex = 10;
+            this.txtBangCap.TabIndex = 11;
             // 
             // txtCMND
             // 
@@ -361,7 +361,7 @@
             this.txtCMND.Properties.Mask.EditMask = "n0";
             this.txtCMND.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtCMND.Size = new System.Drawing.Size(369, 26);
-            this.txtCMND.TabIndex = 8;
+            this.txtCMND.TabIndex = 9;
             // 
             // txtSDT
             // 
@@ -371,7 +371,7 @@
             this.txtSDT.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSDT.Properties.Appearance.Options.UseFont = true;
             this.txtSDT.Size = new System.Drawing.Size(369, 26);
-            this.txtSDT.TabIndex = 9;
+            this.txtSDT.TabIndex = 10;
             // 
             // txtHo
             // 
@@ -381,7 +381,7 @@
             this.txtHo.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHo.Properties.Appearance.Options.UseFont = true;
             this.txtHo.Size = new System.Drawing.Size(239, 26);
-            this.txtHo.TabIndex = 2;
+            this.txtHo.TabIndex = 3;
             // 
             // txtPass
             // 
@@ -546,7 +546,7 @@
             this.gridControlNhanVien.MainView = this.gridViewNhanVien;
             this.gridControlNhanVien.Name = "gridControlNhanVien";
             this.gridControlNhanVien.Size = new System.Drawing.Size(1264, 221);
-            this.gridControlNhanVien.TabIndex = 1;
+            this.gridControlNhanVien.TabIndex = 0;
             this.gridControlNhanVien.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewNhanVien});
             // 
@@ -709,7 +709,7 @@
             this.btnDangXuat.Location = new System.Drawing.Point(1165, 31);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(99, 27);
-            this.btnDangXuat.TabIndex = 4;
+            this.btnDangXuat.TabIndex = 1;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 

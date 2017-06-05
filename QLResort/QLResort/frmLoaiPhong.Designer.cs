@@ -38,7 +38,6 @@
             this.colMoTa = new DevExpress.XtraGrid.Columns.GridColumn();
             this.grpLoaiPhong = new DevExpress.XtraEditors.GroupControl();
             this.mmoMota = new DevExpress.XtraEditors.MemoEdit();
-            this.picLoaiPhong = new DevExpress.XtraEditors.PictureEdit();
             this.btnDong = new DevExpress.XtraEditors.SimpleButton();
             this.btnRefresh = new DevExpress.XtraEditors.SimpleButton();
             this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
@@ -61,7 +60,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.grpLoaiPhong)).BeginInit();
             this.grpLoaiPhong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mmoMota.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLoaiPhong.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoLuong.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGia.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).BeginInit();
@@ -77,7 +75,7 @@
             this.gridControlLoaiPhong.MainView = this.gridViewLoaiPhong;
             this.gridControlLoaiPhong.Name = "gridControlLoaiPhong";
             this.gridControlLoaiPhong.Size = new System.Drawing.Size(884, 373);
-            this.gridControlLoaiPhong.TabIndex = 1;
+            this.gridControlLoaiPhong.TabIndex = 0;
             this.gridControlLoaiPhong.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewLoaiPhong});
             // 
@@ -151,7 +149,6 @@
             this.grpLoaiPhong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grpLoaiPhong.Controls.Add(this.mmoMota);
-            this.grpLoaiPhong.Controls.Add(this.picLoaiPhong);
             this.grpLoaiPhong.Controls.Add(this.btnDong);
             this.grpLoaiPhong.Controls.Add(this.btnRefresh);
             this.grpLoaiPhong.Controls.Add(this.btnXoa);
@@ -175,23 +172,12 @@
             // mmoMota
             // 
             this.mmoMota.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.mmoMota.Location = new System.Drawing.Point(405, 76);
+            this.mmoMota.Location = new System.Drawing.Point(549, 76);
             this.mmoMota.Name = "mmoMota";
             this.mmoMota.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mmoMota.Properties.Appearance.Options.UseFont = true;
-            this.mmoMota.Size = new System.Drawing.Size(192, 62);
+            this.mmoMota.Size = new System.Drawing.Size(291, 62);
             this.mmoMota.TabIndex = 4;
-            // 
-            // picLoaiPhong
-            // 
-            this.picLoaiPhong.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.picLoaiPhong.Location = new System.Drawing.Point(670, 34);
-            this.picLoaiPhong.Name = "picLoaiPhong";
-            this.picLoaiPhong.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picLoaiPhong.Properties.Appearance.Options.UseFont = true;
-            this.picLoaiPhong.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.picLoaiPhong.Size = new System.Drawing.Size(181, 105);
-            this.picLoaiPhong.TabIndex = 5;
             // 
             // btnDong
             // 
@@ -202,7 +188,7 @@
             this.btnDong.Location = new System.Drawing.Point(614, 157);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(82, 26);
-            this.btnDong.TabIndex = 10;
+            this.btnDong.TabIndex = 9;
             this.btnDong.Text = "Đóng";
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
@@ -215,7 +201,7 @@
             this.btnRefresh.Location = new System.Drawing.Point(508, 157);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(82, 26);
-            this.btnRefresh.TabIndex = 9;
+            this.btnRefresh.TabIndex = 8;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
@@ -228,7 +214,7 @@
             this.btnXoa.Location = new System.Drawing.Point(402, 157);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(82, 26);
-            this.btnXoa.TabIndex = 8;
+            this.btnXoa.TabIndex = 7;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
@@ -241,7 +227,7 @@
             this.btnSua.Location = new System.Drawing.Point(296, 157);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(82, 26);
-            this.btnSua.TabIndex = 7;
+            this.btnSua.TabIndex = 6;
             this.btnSua.Text = "Sửa";
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
@@ -254,7 +240,7 @@
             this.btnThem.Location = new System.Drawing.Point(189, 157);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(83, 26);
-            this.btnThem.TabIndex = 6;
+            this.btnThem.TabIndex = 5;
             this.btnThem.Text = "Thêm";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
@@ -262,25 +248,25 @@
             // 
             this.txtSoLuong.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtSoLuong.Enabled = false;
-            this.txtSoLuong.Location = new System.Drawing.Point(404, 30);
+            this.txtSoLuong.Location = new System.Drawing.Point(548, 30);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoLuong.Properties.Appearance.Options.UseFont = true;
             this.txtSoLuong.Properties.Mask.EditMask = "n0";
             this.txtSoLuong.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.txtSoLuong.Size = new System.Drawing.Size(193, 26);
+            this.txtSoLuong.Size = new System.Drawing.Size(291, 26);
             this.txtSoLuong.TabIndex = 3;
             // 
             // txtGia
             // 
             this.txtGia.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtGia.Location = new System.Drawing.Point(65, 115);
+            this.txtGia.Location = new System.Drawing.Point(81, 115);
             this.txtGia.Name = "txtGia";
             this.txtGia.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGia.Properties.Appearance.Options.UseFont = true;
             this.txtGia.Properties.Mask.EditMask = "n0";
             this.txtGia.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.txtGia.Size = new System.Drawing.Size(193, 26);
+            this.txtGia.Size = new System.Drawing.Size(291, 26);
             this.txtGia.TabIndex = 2;
             // 
             // lblSoLuong
@@ -288,7 +274,7 @@
             this.lblSoLuong.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblSoLuong.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoLuong.Appearance.ForeColor = System.Drawing.Color.Blue;
-            this.lblSoLuong.Location = new System.Drawing.Point(340, 34);
+            this.lblSoLuong.Location = new System.Drawing.Point(484, 34);
             this.lblSoLuong.Name = "lblSoLuong";
             this.lblSoLuong.Size = new System.Drawing.Size(58, 19);
             this.lblSoLuong.TabIndex = 0;
@@ -299,7 +285,7 @@
             this.lblMoTa.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblMoTa.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMoTa.Appearance.ForeColor = System.Drawing.Color.Blue;
-            this.lblMoTa.Location = new System.Drawing.Point(358, 76);
+            this.lblMoTa.Location = new System.Drawing.Point(502, 76);
             this.lblMoTa.Name = "lblMoTa";
             this.lblMoTa.Size = new System.Drawing.Size(40, 19);
             this.lblMoTa.TabIndex = 0;
@@ -308,23 +294,23 @@
             // txtTen
             // 
             this.txtTen.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtTen.Location = new System.Drawing.Point(65, 73);
+            this.txtTen.Location = new System.Drawing.Point(81, 73);
             this.txtTen.Name = "txtTen";
             this.txtTen.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTen.Properties.Appearance.Options.UseFont = true;
-            this.txtTen.Size = new System.Drawing.Size(193, 26);
+            this.txtTen.Size = new System.Drawing.Size(291, 26);
             this.txtTen.TabIndex = 1;
             // 
             // txtID
             // 
             this.txtID.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtID.Location = new System.Drawing.Point(65, 31);
+            this.txtID.Location = new System.Drawing.Point(81, 31);
             this.txtID.Name = "txtID";
             this.txtID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID.Properties.Appearance.Options.UseFont = true;
             this.txtID.Properties.Mask.EditMask = "n0";
             this.txtID.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.txtID.Size = new System.Drawing.Size(193, 26);
+            this.txtID.Size = new System.Drawing.Size(291, 26);
             this.txtID.TabIndex = 0;
             // 
             // lblGia
@@ -332,7 +318,7 @@
             this.lblGia.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblGia.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGia.Appearance.ForeColor = System.Drawing.Color.Blue;
-            this.lblGia.Location = new System.Drawing.Point(35, 119);
+            this.lblGia.Location = new System.Drawing.Point(45, 119);
             this.lblGia.Name = "lblGia";
             this.lblGia.Size = new System.Drawing.Size(24, 19);
             this.lblGia.TabIndex = 0;
@@ -343,7 +329,7 @@
             this.lblTen.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTen.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTen.Appearance.ForeColor = System.Drawing.Color.Blue;
-            this.lblTen.Location = new System.Drawing.Point(33, 77);
+            this.lblTen.Location = new System.Drawing.Point(49, 77);
             this.lblTen.Name = "lblTen";
             this.lblTen.Size = new System.Drawing.Size(26, 19);
             this.lblTen.TabIndex = 0;
@@ -354,7 +340,7 @@
             this.lblIDLP.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblIDLP.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIDLP.Appearance.ForeColor = System.Drawing.Color.Blue;
-            this.lblIDLP.Location = new System.Drawing.Point(40, 35);
+            this.lblIDLP.Location = new System.Drawing.Point(56, 35);
             this.lblIDLP.Name = "lblIDLP";
             this.lblIDLP.Size = new System.Drawing.Size(19, 19);
             this.lblIDLP.TabIndex = 0;
@@ -369,7 +355,7 @@
             this.btnHuy.Location = new System.Drawing.Point(793, 317);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(82, 26);
-            this.btnHuy.TabIndex = 3;
+            this.btnHuy.TabIndex = 2;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
@@ -382,7 +368,7 @@
             this.btnLuu.Location = new System.Drawing.Point(686, 317);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(83, 26);
-            this.btnLuu.TabIndex = 2;
+            this.btnLuu.TabIndex = 1;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
@@ -425,7 +411,6 @@
             this.grpLoaiPhong.ResumeLayout(false);
             this.grpLoaiPhong.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mmoMota.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLoaiPhong.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoLuong.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGia.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).EndInit();
@@ -458,7 +443,6 @@
         private DevExpress.XtraEditors.TextEdit txtTen;
         private DevExpress.XtraEditors.SimpleButton btnRefresh;
         private DevExpress.XtraEditors.SimpleButton btnDong;
-        private DevExpress.XtraEditors.PictureEdit picLoaiPhong;
         private DevExpress.XtraEditors.MemoEdit mmoMota;
         private DevExpress.XtraEditors.SimpleButton btnHuy;
         private DevExpress.XtraEditors.SimpleButton btnLuu;

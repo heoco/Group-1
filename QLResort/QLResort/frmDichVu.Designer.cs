@@ -64,7 +64,7 @@
             this.btnThanhToan.Location = new System.Drawing.Point(346, 0);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(99, 27);
-            this.btnThanhToan.TabIndex = 2;
+            this.btnThanhToan.TabIndex = 1;
             this.btnThanhToan.Text = "Thanh toán";
             this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
@@ -77,7 +77,7 @@
             this.btnDangXuat.Location = new System.Drawing.Point(820, 0);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(99, 27);
-            this.btnDangXuat.TabIndex = 3;
+            this.btnDangXuat.TabIndex = 2;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 

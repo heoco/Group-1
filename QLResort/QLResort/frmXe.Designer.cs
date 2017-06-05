@@ -112,7 +112,7 @@
             this.btnLoaiXe.Location = new System.Drawing.Point(380, 157);
             this.btnLoaiXe.Name = "btnLoaiXe";
             this.btnLoaiXe.Size = new System.Drawing.Size(26, 26);
-            this.btnLoaiXe.TabIndex = 12;
+            this.btnLoaiXe.TabIndex = 4;
             this.btnLoaiXe.Click += new System.EventHandler(this.btnLoaiXe_Click);
             // 
             // lookLoaiXe
@@ -125,7 +125,7 @@
             this.lookLoaiXe.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookLoaiXe.Size = new System.Drawing.Size(254, 26);
-            this.lookLoaiXe.TabIndex = 11;
+            this.lookLoaiXe.TabIndex = 3;
             // 
             // toggleTrangThai
             // 
@@ -138,7 +138,7 @@
             this.toggleTrangThai.Properties.OffText = "Hết";
             this.toggleTrangThai.Properties.OnText = "Còn";
             this.toggleTrangThai.Size = new System.Drawing.Size(116, 29);
-            this.toggleTrangThai.TabIndex = 5;
+            this.toggleTrangThai.TabIndex = 7;
             // 
             // mmoMota
             // 
@@ -148,7 +148,7 @@
             this.mmoMota.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mmoMota.Properties.Appearance.Options.UseFont = true;
             this.mmoMota.Size = new System.Drawing.Size(286, 62);
-            this.mmoMota.TabIndex = 4;
+            this.mmoMota.TabIndex = 6;
             // 
             // btnDong
             // 
@@ -159,7 +159,7 @@
             this.btnDong.Location = new System.Drawing.Point(614, 200);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(82, 26);
-            this.btnDong.TabIndex = 10;
+            this.btnDong.TabIndex = 12;
             this.btnDong.Text = "Đóng";
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
@@ -172,7 +172,7 @@
             this.btnRefresh.Location = new System.Drawing.Point(508, 200);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(82, 26);
-            this.btnRefresh.TabIndex = 9;
+            this.btnRefresh.TabIndex = 11;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
@@ -185,7 +185,7 @@
             this.btnXoa.Location = new System.Drawing.Point(402, 200);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(82, 26);
-            this.btnXoa.TabIndex = 8;
+            this.btnXoa.TabIndex = 10;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
@@ -198,7 +198,7 @@
             this.btnSua.Location = new System.Drawing.Point(296, 200);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(82, 26);
-            this.btnSua.TabIndex = 7;
+            this.btnSua.TabIndex = 9;
             this.btnSua.Text = "Sửa";
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
@@ -211,7 +211,7 @@
             this.btnThem.Location = new System.Drawing.Point(189, 200);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(83, 26);
-            this.btnThem.TabIndex = 6;
+            this.btnThem.TabIndex = 8;
             this.btnThem.Text = "Thêm";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
@@ -225,7 +225,7 @@
             this.txtGiaThue.Properties.Mask.EditMask = "n0";
             this.txtGiaThue.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtGiaThue.Size = new System.Drawing.Size(286, 26);
-            this.txtGiaThue.TabIndex = 3;
+            this.txtGiaThue.TabIndex = 5;
             // 
             // lblTrangThai
             // 
@@ -341,7 +341,7 @@
             this.gridControlXe.MainView = this.gridViewXe;
             this.gridControlXe.Name = "gridControlXe";
             this.gridControlXe.Size = new System.Drawing.Size(884, 331);
-            this.gridControlXe.TabIndex = 1;
+            this.gridControlXe.TabIndex = 0;
             this.gridControlXe.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewXe});
             // 

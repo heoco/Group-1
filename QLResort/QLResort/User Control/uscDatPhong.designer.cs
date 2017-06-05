@@ -86,7 +86,7 @@
             this.pnlDisplay.Location = new System.Drawing.Point(3, 203);
             this.pnlDisplay.Name = "pnlDisplay";
             this.pnlDisplay.Size = new System.Drawing.Size(1250, 421);
-            this.pnlDisplay.TabIndex = 138;
+            this.pnlDisplay.TabIndex = 3;
             // 
             // radTatCa
             // 
@@ -95,7 +95,7 @@
             this.radTatCa.Location = new System.Drawing.Point(213, 5);
             this.radTatCa.Name = "radTatCa";
             this.radTatCa.Size = new System.Drawing.Size(96, 36);
-            this.radTatCa.TabIndex = 2;
+            this.radTatCa.TabIndex = 4;
             this.radTatCa.TabStop = true;
             this.radTatCa.Text = "Tất cả";
             this.radTatCa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -109,7 +109,7 @@
             this.radDaDat.Location = new System.Drawing.Point(109, 5);
             this.radDaDat.Name = "radDaDat";
             this.radDaDat.Size = new System.Drawing.Size(96, 36);
-            this.radDaDat.TabIndex = 1;
+            this.radDaDat.TabIndex = 3;
             this.radDaDat.TabStop = true;
             this.radDaDat.Text = "Đã đặt";
             this.radDaDat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -123,7 +123,7 @@
             this.radTrong.Location = new System.Drawing.Point(5, 5);
             this.radTrong.Name = "radTrong";
             this.radTrong.Size = new System.Drawing.Size(96, 36);
-            this.radTrong.TabIndex = 0;
+            this.radTrong.TabIndex = 2;
             this.radTrong.TabStop = true;
             this.radTrong.Text = "Trống";
             this.radTrong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -137,7 +137,7 @@
             this.radgrpChoose.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radgrpChoose.Properties.Appearance.Options.UseFont = true;
             this.radgrpChoose.Size = new System.Drawing.Size(310, 42);
-            this.radgrpChoose.TabIndex = 104;
+            this.radgrpChoose.TabIndex = 1;
             // 
             // btnDatPhong
             // 
@@ -147,7 +147,7 @@
             this.btnDatPhong.Location = new System.Drawing.Point(1134, 2);
             this.btnDatPhong.Name = "btnDatPhong";
             this.btnDatPhong.Size = new System.Drawing.Size(114, 42);
-            this.btnDatPhong.TabIndex = 103;
+            this.btnDatPhong.TabIndex = 6;
             this.btnDatPhong.Text = "Đặt phòng";
             this.btnDatPhong.UseVisualStyleBackColor = false;
             this.btnDatPhong.Click += new System.EventHandler(this.btnDatPhong_Click);
@@ -161,7 +161,7 @@
             this.btnClear.Location = new System.Drawing.Point(673, 11);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(66, 26);
-            this.btnClear.TabIndex = 102;
+            this.btnClear.TabIndex = 5;
             this.btnClear.Text = "Clear";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
@@ -249,7 +249,7 @@
             this.cboLoaiPhong.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cboLoaiPhong.Size = new System.Drawing.Size(184, 26);
-            this.cboLoaiPhong.TabIndex = 126;
+            this.cboLoaiPhong.TabIndex = 0;
             // 
             // dateNgayTra
             // 
@@ -263,7 +263,7 @@
             this.dateNgayTra.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateNgayTra.Size = new System.Drawing.Size(184, 26);
-            this.dateNgayTra.TabIndex = 131;
+            this.dateNgayTra.TabIndex = 2;
             // 
             // dateNgayNhan
             // 
@@ -277,7 +277,7 @@
             this.dateNgayNhan.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateNgayNhan.Size = new System.Drawing.Size(184, 26);
-            this.dateNgayNhan.TabIndex = 130;
+            this.dateNgayNhan.TabIndex = 1;
             // 
             // lblNgayTra
             // 

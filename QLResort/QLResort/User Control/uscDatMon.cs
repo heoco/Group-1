@@ -290,7 +290,6 @@ namespace QLResort.User_Control
         private void lookLoaiMon_EditValueChanged(object sender, EventArgs e)
         {
             txtIDMon.ResetText();
-            soLuong = 1;
             donGia = thanhTien = 0;
             LoadTextBox();
 

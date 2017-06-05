@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThucDon));
             this.grpMon = new DevExpress.XtraEditors.GroupControl();
+            this.btnLoaiMon = new DevExpress.XtraEditors.SimpleButton();
             this.toggleTrangThai = new DevExpress.XtraEditors.ToggleSwitch();
             this.lookLoaiMon = new DevExpress.XtraEditors.LookUpEdit();
             this.mmoMota = new DevExpress.XtraEditors.MemoEdit();
@@ -56,7 +57,6 @@
             this.colMoTa = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTrangThai = new DevExpress.XtraGrid.Columns.GridColumn();
             this.lblTittle = new System.Windows.Forms.Label();
-            this.btnLoaiMon = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.grpMon)).BeginInit();
             this.grpMon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.toggleTrangThai.Properties)).BeginInit();
@@ -97,6 +97,17 @@
             this.grpMon.TabIndex = 0;
             this.grpMon.Text = "Thông tin Món:";
             // 
+            // btnLoaiMon
+            // 
+            this.btnLoaiMon.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoaiMon.Appearance.Options.UseFont = true;
+            this.btnLoaiMon.Image = ((System.Drawing.Image)(resources.GetObject("btnLoaiMon.Image")));
+            this.btnLoaiMon.Location = new System.Drawing.Point(380, 116);
+            this.btnLoaiMon.Name = "btnLoaiMon";
+            this.btnLoaiMon.Size = new System.Drawing.Size(26, 26);
+            this.btnLoaiMon.TabIndex = 3;
+            this.btnLoaiMon.Click += new System.EventHandler(this.btnLoaiMon_Click);
+            // 
             // toggleTrangThai
             // 
             this.toggleTrangThai.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -108,7 +119,7 @@
             this.toggleTrangThai.Properties.OffText = "Hết";
             this.toggleTrangThai.Properties.OnText = "Còn";
             this.toggleTrangThai.Size = new System.Drawing.Size(116, 29);
-            this.toggleTrangThai.TabIndex = 5;
+            this.toggleTrangThai.TabIndex = 6;
             // 
             // lookLoaiMon
             // 
@@ -130,7 +141,7 @@
             this.mmoMota.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mmoMota.Properties.Appearance.Options.UseFont = true;
             this.mmoMota.Size = new System.Drawing.Size(286, 62);
-            this.mmoMota.TabIndex = 4;
+            this.mmoMota.TabIndex = 5;
             // 
             // btnDong
             // 
@@ -141,7 +152,7 @@
             this.btnDong.Location = new System.Drawing.Point(614, 200);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(82, 26);
-            this.btnDong.TabIndex = 10;
+            this.btnDong.TabIndex = 11;
             this.btnDong.Text = "Đóng";
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
@@ -154,7 +165,7 @@
             this.btnRefresh.Location = new System.Drawing.Point(508, 200);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(82, 26);
-            this.btnRefresh.TabIndex = 9;
+            this.btnRefresh.TabIndex = 10;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
@@ -167,7 +178,7 @@
             this.btnXoa.Location = new System.Drawing.Point(402, 200);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(82, 26);
-            this.btnXoa.TabIndex = 8;
+            this.btnXoa.TabIndex = 9;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
@@ -180,7 +191,7 @@
             this.btnSua.Location = new System.Drawing.Point(296, 200);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(82, 26);
-            this.btnSua.TabIndex = 7;
+            this.btnSua.TabIndex = 8;
             this.btnSua.Text = "Sửa";
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
@@ -193,7 +204,7 @@
             this.btnThem.Location = new System.Drawing.Point(189, 200);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(83, 26);
-            this.btnThem.TabIndex = 6;
+            this.btnThem.TabIndex = 7;
             this.btnThem.Text = "Thêm";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
@@ -207,7 +218,7 @@
             this.txtDonGia.Properties.Mask.EditMask = "n0";
             this.txtDonGia.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtDonGia.Size = new System.Drawing.Size(286, 26);
-            this.txtDonGia.TabIndex = 3;
+            this.txtDonGia.TabIndex = 4;
             // 
             // lblTrangThai
             // 
@@ -304,7 +315,7 @@
             this.gridControlThucDon.MainView = this.gridViewThucDon;
             this.gridControlThucDon.Name = "gridControlThucDon";
             this.gridControlThucDon.Size = new System.Drawing.Size(884, 331);
-            this.gridControlThucDon.TabIndex = 1;
+            this.gridControlThucDon.TabIndex = 0;
             this.gridControlThucDon.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewThucDon});
             // 
@@ -392,17 +403,6 @@
             this.lblTittle.TabIndex = 5;
             this.lblTittle.Text = "Quản lý Thực Đơn";
             this.lblTittle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnLoaiMon
-            // 
-            this.btnLoaiMon.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoaiMon.Appearance.Options.UseFont = true;
-            this.btnLoaiMon.Image = ((System.Drawing.Image)(resources.GetObject("btnLoaiMon.Image")));
-            this.btnLoaiMon.Location = new System.Drawing.Point(380, 116);
-            this.btnLoaiMon.Name = "btnLoaiMon";
-            this.btnLoaiMon.Size = new System.Drawing.Size(26, 26);
-            this.btnLoaiMon.TabIndex = 15;
-            this.btnLoaiMon.Click += new System.EventHandler(this.btnLoaiMon_Click);
             // 
             // frmThucDon
             // 

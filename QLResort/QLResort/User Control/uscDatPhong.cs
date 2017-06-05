@@ -319,6 +319,15 @@ namespace QLResort.User_Control
             frmXNDP.ShowDialog();
             if (frmXNDatPhong.coHieu)
             {
+                List<Tuple<int, DateTime, DateTime>> lstRemove = new List<Tuple<int, DateTime, DateTime>>();
+                lstRemove = frmXNDP.lstRemove;
+                foreach (Tuple<int, DateTime, DateTime> tup in lstChoose)
+                {
+                    dicRoom[tup.Item1].BackColor = lblEmpty.BackColor;
+                }
+
+                lstChoose = frmXNDP.lstSuccess;
+                lstChoose.Sort();
                 if (radTrong.Checked)
                 {
                     foreach (Tuple<int, DateTime, DateTime> tup in lstChoose)
@@ -345,6 +354,12 @@ namespace QLResort.User_Control
                         dicRoom[tup.Item1].Enabled = false;
                     }
                 }
+
+                foreach (Tuple<int, DateTime, DateTime> tup in lstRemove)
+                {
+                    dicRoom[tup.Item1].BackColor = lblEmpty.BackColor;
+                }
+
                 lstChoose.Clear();
                 txtChoose.Text = lstChoose.Count + " (phòng)";
             }

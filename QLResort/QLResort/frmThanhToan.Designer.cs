@@ -167,7 +167,7 @@
             this.btnHuy.Location = new System.Drawing.Point(796, 105);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(82, 30);
-            this.btnHuy.TabIndex = 48;
+            this.btnHuy.TabIndex = 2;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
@@ -180,7 +180,7 @@
             this.btnOK.Location = new System.Drawing.Point(685, 105);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(82, 30);
-            this.btnOK.TabIndex = 47;
+            this.btnOK.TabIndex = 1;
             this.btnOK.Text = "OK";
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
@@ -193,7 +193,7 @@
             this.lookKhachHang.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookKhachHang.Size = new System.Drawing.Size(191, 28);
-            this.lookKhachHang.TabIndex = 80;
+            this.lookKhachHang.TabIndex = 0;
             this.lookKhachHang.EditValueChanged += new System.EventHandler(this.lookKhachHang_EditValueChanged);
             // 
             // frmThanhToan

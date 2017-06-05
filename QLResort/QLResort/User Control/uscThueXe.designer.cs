@@ -96,7 +96,7 @@
             this.dateNgayTra.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateNgayTra.Size = new System.Drawing.Size(184, 26);
-            this.dateNgayTra.TabIndex = 139;
+            this.dateNgayTra.TabIndex = 4;
             // 
             // dateNgayNhan
             // 
@@ -110,7 +110,7 @@
             this.dateNgayNhan.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateNgayNhan.Size = new System.Drawing.Size(184, 26);
-            this.dateNgayNhan.TabIndex = 138;
+            this.dateNgayNhan.TabIndex = 3;
             // 
             // lblNgayTra
             // 
@@ -140,7 +140,7 @@
             this.gridControlXe.MainView = this.gridViewXe;
             this.gridControlXe.Name = "gridControlXe";
             this.gridControlXe.Size = new System.Drawing.Size(595, 360);
-            this.gridControlXe.TabIndex = 134;
+            this.gridControlXe.TabIndex = 5;
             this.gridControlXe.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewXe});
             // 
@@ -229,7 +229,7 @@
             this.gridControlChoose.MainView = this.gridViewChoose;
             this.gridControlChoose.Name = "gridControlChoose";
             this.gridControlChoose.Size = new System.Drawing.Size(595, 360);
-            this.gridControlChoose.TabIndex = 135;
+            this.gridControlChoose.TabIndex = 6;
             this.gridControlChoose.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewChoose});
             // 
@@ -379,7 +379,7 @@
             this.btnKhachHang.Location = new System.Drawing.Point(765, 98);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.Size = new System.Drawing.Size(26, 26);
-            this.btnKhachHang.TabIndex = 131;
+            this.btnKhachHang.TabIndex = 1;
             this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
             // btnDeleteAll
@@ -391,7 +391,7 @@
             this.btnDeleteAll.Location = new System.Drawing.Point(1151, 241);
             this.btnDeleteAll.Name = "btnDeleteAll";
             this.btnDeleteAll.Size = new System.Drawing.Size(97, 30);
-            this.btnDeleteAll.TabIndex = 130;
+            this.btnDeleteAll.TabIndex = 7;
             this.btnDeleteAll.Text = "Delete All";
             this.btnDeleteAll.Click += new System.EventHandler(this.btnDeleteAll_Click);
             // 
@@ -404,7 +404,7 @@
             this.btnThueXe.Location = new System.Drawing.Point(1151, 96);
             this.btnThueXe.Name = "btnThueXe";
             this.btnThueXe.Size = new System.Drawing.Size(97, 30);
-            this.btnThueXe.TabIndex = 128;
+            this.btnThueXe.TabIndex = 8;
             this.btnThueXe.Text = "Thuê xe";
             this.btnThueXe.Click += new System.EventHandler(this.btnThueXe_Click);
             // 
@@ -461,7 +461,7 @@
             this.lookKhachHang.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookKhachHang.Size = new System.Drawing.Size(191, 28);
-            this.lookKhachHang.TabIndex = 140;
+            this.lookKhachHang.TabIndex = 0;
             // 
             // txtTongTien
             // 
@@ -494,7 +494,7 @@
             this.lookLoaiXe.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookLoaiXe.Size = new System.Drawing.Size(191, 28);
-            this.lookLoaiXe.TabIndex = 144;
+            this.lookLoaiXe.TabIndex = 2;
             this.lookLoaiXe.EditValueChanged += new System.EventHandler(this.lookLoaiXe_EditValueChanged);
             // 
             // lblLoaiXe

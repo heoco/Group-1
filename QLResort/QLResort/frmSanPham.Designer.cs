@@ -113,7 +113,7 @@
             this.btnLoaiSanPham.Location = new System.Drawing.Point(375, 116);
             this.btnLoaiSanPham.Name = "btnLoaiSanPham";
             this.btnLoaiSanPham.Size = new System.Drawing.Size(26, 26);
-            this.btnLoaiSanPham.TabIndex = 14;
+            this.btnLoaiSanPham.TabIndex = 3;
             this.btnLoaiSanPham.Click += new System.EventHandler(this.btnLoaiSanPham_Click);
             // 
             // lookLoaiSP
@@ -146,7 +146,7 @@
             this.btnDong.Location = new System.Drawing.Point(614, 238);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(82, 26);
-            this.btnDong.TabIndex = 13;
+            this.btnDong.TabIndex = 12;
             this.btnDong.Text = "Đóng";
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
@@ -159,7 +159,7 @@
             this.btnRefresh.Location = new System.Drawing.Point(508, 238);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(82, 26);
-            this.btnRefresh.TabIndex = 12;
+            this.btnRefresh.TabIndex = 11;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
@@ -172,7 +172,7 @@
             this.btnXoa.Location = new System.Drawing.Point(402, 238);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(82, 26);
-            this.btnXoa.TabIndex = 11;
+            this.btnXoa.TabIndex = 10;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
@@ -185,7 +185,7 @@
             this.btnSua.Location = new System.Drawing.Point(296, 238);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(82, 26);
-            this.btnSua.TabIndex = 10;
+            this.btnSua.TabIndex = 9;
             this.btnSua.Text = "Sửa";
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
@@ -198,7 +198,7 @@
             this.btnThem.Location = new System.Drawing.Point(189, 238);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(83, 26);
-            this.btnThem.TabIndex = 9;
+            this.btnThem.TabIndex = 8;
             this.btnThem.Text = "Thêm";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
@@ -223,7 +223,7 @@
             this.txtGiamGia.Properties.Mask.EditMask = "n0";
             this.txtGiamGia.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtGiamGia.Size = new System.Drawing.Size(259, 26);
-            this.txtGiamGia.TabIndex = 3;
+            this.txtGiamGia.TabIndex = 5;
             // 
             // txtDonGia
             // 
@@ -234,7 +234,7 @@
             this.txtDonGia.Properties.Mask.EditMask = "n0";
             this.txtDonGia.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtDonGia.Size = new System.Drawing.Size(259, 26);
-            this.txtDonGia.TabIndex = 3;
+            this.txtDonGia.TabIndex = 4;
             // 
             // lblSoLuong
             // 
@@ -335,7 +335,7 @@
             this.gridControlSanPham.MainView = this.gridViewSanPham;
             this.gridControlSanPham.Name = "gridControlSanPham";
             this.gridControlSanPham.Size = new System.Drawing.Size(884, 292);
-            this.gridControlSanPham.TabIndex = 1;
+            this.gridControlSanPham.TabIndex = 2;
             this.gridControlSanPham.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewSanPham});
             // 
@@ -410,7 +410,7 @@
             this.colSoLuong.FieldName = "SoLuong";
             this.colSoLuong.Name = "colSoLuong";
             this.colSoLuong.Visible = true;
-            this.colSoLuong.VisibleIndex = 7;
+            this.colSoLuong.VisibleIndex = 5;
             this.colSoLuong.Width = 100;
             // 
             // colMoTa
@@ -419,7 +419,7 @@
             this.colMoTa.FieldName = "MoTa";
             this.colMoTa.Name = "colMoTa";
             this.colMoTa.Visible = true;
-            this.colMoTa.VisibleIndex = 8;
+            this.colMoTa.VisibleIndex = 6;
             this.colMoTa.Width = 150;
             // 
             // lblTittle
@@ -443,7 +443,7 @@
             this.btnHuy.Location = new System.Drawing.Point(795, 398);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(82, 26);
-            this.btnHuy.TabIndex = 7;
+            this.btnHuy.TabIndex = 1;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
@@ -456,7 +456,7 @@
             this.btnLuu.Location = new System.Drawing.Point(688, 398);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(83, 26);
-            this.btnLuu.TabIndex = 6;
+            this.btnLuu.TabIndex = 0;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 

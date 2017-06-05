@@ -96,7 +96,7 @@
             this.btnLoaiPhong.Location = new System.Drawing.Point(552, 111);
             this.btnLoaiPhong.Name = "btnLoaiPhong";
             this.btnLoaiPhong.Size = new System.Drawing.Size(26, 26);
-            this.btnLoaiPhong.TabIndex = 9;
+            this.btnLoaiPhong.TabIndex = 3;
             this.btnLoaiPhong.Click += new System.EventHandler(this.btnLoaiPhong_Click);
             // 
             // btnDong
@@ -108,7 +108,7 @@
             this.btnDong.Location = new System.Drawing.Point(514, 193);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(82, 26);
-            this.btnDong.TabIndex = 8;
+            this.btnDong.TabIndex = 9;
             this.btnDong.Text = "Đóng";
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
@@ -121,7 +121,7 @@
             this.btnRefresh.Location = new System.Drawing.Point(408, 193);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(82, 26);
-            this.btnRefresh.TabIndex = 7;
+            this.btnRefresh.TabIndex = 8;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
@@ -148,7 +148,7 @@
             this.toggleTrangThai.Properties.OffText = "Đang sử dụng";
             this.toggleTrangThai.Properties.OnText = "Trống";
             this.toggleTrangThai.Size = new System.Drawing.Size(175, 29);
-            this.toggleTrangThai.TabIndex = 3;
+            this.toggleTrangThai.TabIndex = 4;
             // 
             // btnXoa
             // 
@@ -159,7 +159,7 @@
             this.btnXoa.Location = new System.Drawing.Point(302, 193);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(82, 26);
-            this.btnXoa.TabIndex = 6;
+            this.btnXoa.TabIndex = 7;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
@@ -172,7 +172,7 @@
             this.btnSua.Location = new System.Drawing.Point(196, 193);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(82, 26);
-            this.btnSua.TabIndex = 5;
+            this.btnSua.TabIndex = 6;
             this.btnSua.Text = "Sửa";
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
@@ -185,7 +185,7 @@
             this.btnThem.Location = new System.Drawing.Point(89, 193);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(83, 26);
-            this.btnThem.TabIndex = 4;
+            this.btnThem.TabIndex = 5;
             this.btnThem.Text = "Thêm";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
@@ -264,7 +264,7 @@
             this.gridControlPhong.MainView = this.gridViewPhong;
             this.gridControlPhong.Name = "gridControlPhong";
             this.gridControlPhong.Size = new System.Drawing.Size(684, 319);
-            this.gridControlPhong.TabIndex = 1;
+            this.gridControlPhong.TabIndex = 2;
             this.gridControlPhong.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewPhong});
             // 
@@ -332,7 +332,7 @@
             this.btnHuy.Location = new System.Drawing.Point(593, 351);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(82, 26);
-            this.btnHuy.TabIndex = 3;
+            this.btnHuy.TabIndex = 1;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
@@ -345,7 +345,7 @@
             this.btnLuu.Location = new System.Drawing.Point(486, 351);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(83, 26);
-            this.btnLuu.TabIndex = 2;
+            this.btnLuu.TabIndex = 0;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 

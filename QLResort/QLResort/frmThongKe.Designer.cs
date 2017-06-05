@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThongKe));
             this.datPhongBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qLResort = new QLResort.Report.QLResort();
@@ -76,9 +76,9 @@
             // 
             this.rptVw.Cursor = System.Windows.Forms.Cursors.Default;
             this.rptVw.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource2.Name = "DsDatPhong";
-            reportDataSource2.Value = this.datPhongBindingSource;
-            this.rptVw.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource1.Name = "DsDatPhong";
+            reportDataSource1.Value = this.datPhongBindingSource;
+            this.rptVw.LocalReport.DataSources.Add(reportDataSource1);
             this.rptVw.LocalReport.ReportEmbeddedResource = "QLResort.Report.rpDatPhong.rdlc";
             this.rptVw.Location = new System.Drawing.Point(0, 0);
             this.rptVw.Name = "reportViewer1";
@@ -143,7 +143,7 @@
             this.dateStart.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateStart.Size = new System.Drawing.Size(169, 28);
-            this.dateStart.TabIndex = 6;
+            this.dateStart.TabIndex = 0;
             // 
             // dateFinish
             // 
@@ -176,7 +176,7 @@
             this.dateFinish.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateFinish.Size = new System.Drawing.Size(169, 28);
-            this.dateFinish.TabIndex = 6;
+            this.dateFinish.TabIndex = 1;
             // 
             // btnPrint
             // 
@@ -186,7 +186,7 @@
             this.btnPrint.Location = new System.Drawing.Point(468, 71);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(111, 50);
-            this.btnPrint.TabIndex = 7;
+            this.btnPrint.TabIndex = 2;
             this.btnPrint.Text = "In báo cáo";
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
